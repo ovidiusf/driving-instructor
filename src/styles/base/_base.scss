@@ -1,8 +1,54 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Franklin Gothic Book", sans-serif;
   text-align: center;
+}
+
+body::after {
+  content: "";
+  background: url(../assets/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  z-index: -1;   
+}
+
+// .background-image {
+//   background: url(../assets/background.png) no-repeat center center fixed; 
+
+//   opacity: 0.5;
+  
+//   position: fixed;
+//   z-index: -1;
+// }
+
+
+h1 {
+  font-size: 60px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }

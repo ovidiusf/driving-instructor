@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+
+0 - 320px:          Small-Phone
+320 - 600px:          Phone
+600px - 900px       Table Portrait
+900px - 1200px      Table Landscape
+[1200px - 1800px]   Desktop Normal Styles
+1800px +            Big Desktop
+
+1em = 16px
+
+ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
+
+*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Franklin Gothic Book", sans-serif;
+  text-align: center;
+}
+
+body::after {
+  content: "";
+  background: url(../assets/background.png) no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p,
+a {
+  font-family: "Franklin Gothic Book";
+  font-size: 2rem;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  position: relative;
+  background: rgba(101, 157, 189, 0.6);
+  z-index: inherit;
+}
+
+header .nav {
+  width: 100%;
+  height: 6rem;
+  line-height: 3rem;
+  position: relative;
+}
+
+header .menu-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header li {
+  padding: 20px;
+}
+
+header a {
+  font-size: 20px;
+}
+
+#hero {
+  padding: 100px;
+}
+/*# sourceMappingURL=main.css.map */

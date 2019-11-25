@@ -1,0 +1,25 @@
+{
+  "name": "driving-instructor",
+  "version": "1.0.0",
+  "description": "project driving instructor webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovidiusf/driving-instructor.git"
+  },
+  "keywords": [
+    "instructor",
+    "auto",
+    "mocanu",
+    "catalin"
+  ],
+  "author": "Ovidiu Fosalau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovidiusf/driving-instructor/issues"
+  },
+  "homepage": "https://github.com/ovidiusf/driving-instructor#readme"
+}

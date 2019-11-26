@@ -1,7 +1,7 @@
 // HEADER STYLES
 
 // ENTIRE HEADER STYLE
-#home {
+#home-header {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -14,12 +14,15 @@
   left: 0;
   height: 8rem;
   @include respond(tab-port) {
-    display: inline-flex;
+    // display: inline-flex;
     justify-content: flex-start;
+  }
+  &.active {
+    background: $primary-color-solid;
   }
 
   // NAV Area
-  .nav {
+  #main-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,51 +37,124 @@
       justify-content: center;
       justify-items: center;
       @include respond(tab-port) {
+        // change to block to see animation
         display: none;
-      }
-      &.active {
-        display: flex;
+        animation: animate-dropdown-pull 0.5s;
+        animation-fill-mode: both;
         flex-direction: column;
         position: absolute;
         width: 100%;
         top: 0;
         margin-top: 80px;
         left: 0;
-        background: $primary-color;
+        background: $primary-color-solid;
         font-size: 15px;
         line-height: 1.5;
       }
-      
-      li {
-        padding-left: 10px;
-        padding-right: 10px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-      }
-    }
-  }
-
-  .home-icon {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    @include respond(tab-port) {
-      margin-left: 20px;
     }
 
-    #home-image {
-      &:hover{
-        margin-right: 5px;
-        transition: all 0.5s ease;
-      }
-      @include respond(tab-port) {
-        width: 60px;
-        height: 58px;
-      }
+    .active {
+      display: flex;
+      animation: animate-dropdown-list 0.5s;
+      animation-direction: alternate;
+      animation-fill-mode: both;
+    }
+
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
     }
   }
 }
+
+@keyframes animate-dropdown-list {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-dropdown-pull {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+// Home
+.home-icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  @include respond(tab-port) {
+    margin-left: 20px;
+  }
+
+  #home-image {
+    &:hover {
+      margin-right: 5px;
+      transition: all 0.5s ease;
+    }
+    @include respond(tab-port) {
+      width: 60px;
+      height: 58px;
+    }
+  }
+}
+
+// overlay effect
+
+// .active-overlay .burger-menu {
+//   background-color: transparent;
+// }
+
+// .active-overlay .burger-menu::before,
+// .active-overlay .burger-menu::after {
+//   top: 0;
+// }
+
+// .overlay {
+//   background-color: $primary-color-solid;
+//   position: fixed;
+//   right: 0;
+//   left: 0;
+//   top: 0;
+//   bottom: 0;
+//   z-index: 1;
+//   transition: opacity 650ms;
+//   transform: scale(0);
+//   opacity: 0;
+// }
+
+// .overlay.menu-open {
+//   transform: scale(1);
+//   opacity: 1;
+// }
+
+// .nav .overlay ul {
+//   position: relative;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
+
+// .nav .overlay ul li a {
+//   display: block;
+//   font-size: 2rem;
+//   transition: all 650ms;
+// }
 
 // MENU BAR
 .burger-menu {

@@ -97,7 +97,7 @@ a:hover {
   color: #7f0000;
 }
 
-#home {
+#home-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,17 +119,18 @@ a:hover {
 }
 
 @media (max-width: 56.25em) {
-  #home {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  #home-header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
 }
 
-#home .nav {
+#home-header.active {
+  background: rgba(101, 157, 189, 0.95);
+}
+
+#home-header #main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +145,7 @@ a:hover {
   line-height: 2rem;
 }
 
-#home .nav .menu-list {
+#home-header #main-nav .menu-list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,30 +162,40 @@ a:hover {
 }
 
 @media (max-width: 56.25em) {
-  #home .nav .menu-list {
+  #home-header #main-nav .menu-list {
     display: none;
+    -webkit-animation: animate-dropdown-pull 0.5s;
+            animation: animate-dropdown-pull 0.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin-top: 80px;
+    left: 0;
+    background: rgba(101, 157, 189, 0.95);
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
 
-#home .nav .menu-list.active {
+#home-header #main-nav .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  margin-top: 80px;
-  left: 0;
-  background: rgba(101, 157, 189, 0.7);
-  font-size: 15px;
-  line-height: 1.5;
+  -webkit-animation: animate-dropdown-list 0.5s;
+          animation: animate-dropdown-list 0.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-#home .nav .menu-list li {
+#home-header #main-nav li {
   padding-left: 10px;
   padding-right: 10px;
   -webkit-box-pack: center;
@@ -198,7 +209,59 @@ a:hover {
   display: flex;
 }
 
-#home .home-icon {
+@-webkit-keyframes animate-dropdown-list {
+  from {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-dropdown-list {
+  from {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animate-dropdown-pull {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes animate-dropdown-pull {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.home-icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -211,19 +274,19 @@ a:hover {
 }
 
 @media (max-width: 56.25em) {
-  #home .home-icon {
+  .home-icon {
     margin-left: 20px;
   }
 }
 
-#home .home-icon #home-image:hover {
+.home-icon #home-image:hover {
   margin-right: 5px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 @media (max-width: 56.25em) {
-  #home .home-icon #home-image {
+  .home-icon #home-image {
     width: 60px;
     height: 58px;
   }

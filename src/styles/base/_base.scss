@@ -1,12 +1,13 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-
 }
 
 body {
   font-family: "Franklin Gothic Book", sans-serif;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 body::after {

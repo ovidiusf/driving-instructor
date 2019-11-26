@@ -1,11 +1,14 @@
 h1 {
   font-weight: 700;
+  font-size: 60px;
 }
 
 p,
 a {
   font-family: "Franklin Gothic Book";
+  // font-size: $default-font-size;
   font-size: $default-font-size;
+  // line-height: 34px;
 }
 
 a,
@@ -17,5 +20,6 @@ a:active {
 }
 
 a:hover {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #2e1114;
 }

@@ -10,6 +10,8 @@ body {
   justify-content: center;
 }
 
+// Set background image
+
 body::after {
   content: "";
   background: url(../assets/background.png) no-repeat center center fixed; 
@@ -27,16 +29,6 @@ body::after {
   position: fixed;
   z-index: -1;   
 }
-
-// .background-image {
-//   background: url(../assets/background.png) no-repeat center center fixed; 
-
-//   opacity: 0.5;
-  
-//   position: fixed;
-//   z-index: -1;
-// }
-
 
 h1 {
   font-size: 60px;

@@ -87,10 +87,14 @@ a:active {
   text-decoration: none;
 }
 
+a:visited {
+  color: #000;
+}
+
 a:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #2e1114;
+  color: #7f0000;
 }
 
 #home {
@@ -140,12 +144,6 @@ a:hover {
   line-height: 2rem;
 }
 
-@media (max-width: 56.25em) {
-  #home .nav {
-    display: none;
-  }
-}
-
 #home .nav .menu-list {
   list-style-type: none;
   display: -webkit-box;
@@ -162,16 +160,28 @@ a:hover {
   justify-items: center;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   #home .nav .menu-list {
     display: none;
   }
 }
 
-@media (max-width: 56.25em) {
-  #home .nav .menu-list {
-    display: none;
-  }
+#home .nav .menu-list.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin-top: 80px;
+  left: 0;
+  background: rgba(101, 157, 189, 0.7);
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 #home .nav .menu-list li {
@@ -204,6 +214,12 @@ a:hover {
   #home .home-icon {
     margin-left: 20px;
   }
+}
+
+#home .home-icon #home-image:hover {
+  margin-right: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 56.25em) {

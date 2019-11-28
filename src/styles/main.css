@@ -79,11 +79,13 @@ a {
   font-size: 2em;
 }
 
-a,
-a:link,
-a:hover,
-a:visited,
-a:active {
+a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+a:link, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
@@ -183,19 +185,7 @@ a:hover {
   }
 }
 
-#home-header #main-nav .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: animate-dropdown-list 0.5s;
-          animation: animate-dropdown-list 0.5s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-#home-header #main-nav li {
+#home-header #main-nav .menu-list li {
   padding-left: 10px;
   padding-right: 10px;
   -webkit-box-pack: center;
@@ -207,6 +197,18 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#home-header #main-nav .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: animate-dropdown-list 0.5s;
+          animation: animate-dropdown-list 0.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes animate-dropdown-list {
@@ -277,6 +279,11 @@ a:hover {
   .home-icon {
     margin-left: 20px;
   }
+}
+
+.home-icon #home-image {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .home-icon #home-image:hover {

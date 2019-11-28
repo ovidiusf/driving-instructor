@@ -5,24 +5,27 @@ h1 {
 
 p,
 a {
-  font-family: "Franklin Gothic Book";
+  font-family: $default-font-family;
   // font-size: $default-font-size;
   font-size: $default-font-size;
   // line-height: 34px;
 }
 
-a,
-a:link,
-a:hover,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-a:visited {
+a {
+  font-weight: 600;
   color: #000;
+  text-decoration: none;
+  &:link,
+  &:hover,
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+  &:visited {
+    color: #000;
+  }
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    color: #7f0000;
+  }
 }
-a:hover {
-  transition: all 0.5s ease-in-out;
-  color: #7f0000;
-}
-

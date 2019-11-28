@@ -51,6 +51,14 @@
         font-size: 15px;
         line-height: 1.5;
       }
+
+      li {
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
     }
 
     .active {
@@ -58,14 +66,6 @@
       animation: animate-dropdown-list 0.5s;
       animation-direction: alternate;
       animation-fill-mode: both;
-    }
-
-    li {
-      padding-left: 10px;
-      padding-right: 10px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
     }
   }
 }
@@ -102,6 +102,7 @@
   }
 
   #home-image {
+    transition: all 0.5s ease;
     &:hover {
       margin-right: 5px;
       transition: all 0.5s ease;

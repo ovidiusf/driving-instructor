@@ -1,10 +1,13 @@
+// Defining variables
 const menuList = document.querySelector('#menu-list');
 const mainNav = document.querySelector('#main-nav');
 const burgerMenuToggle = document.querySelector('#burger-toggle');
 const homeHeader = document.querySelector('#home-header');
 const burgerMenuStickComponents = document.getElementsByClassName('stick');
+let prevScrollpos = window.pageYOffset;
 
-// changes burger menu animation and toggles down/up the menu
+
+// changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
     homeHeader.classList.toggle('active');
     menuList.classList.toggle('active');
@@ -12,7 +15,7 @@ burgerMenuToggle.addEventListener('click', function () {
     changeBurgerMenuAnimation();
 });
 
-// 
+// changes animation of the burger menu
 const changeBurgerMenuAnimation = () => {
     for (let i = 0; i < burgerMenuStickComponents.length; i++) {
         const burgerMenuStickComponentsClassList = burgerMenuStickComponents[i].classList;
@@ -24,6 +27,19 @@ const changeBurgerMenuAnimation = () => {
         } 
     }
 };
+
+// hides the navbar when scrolling
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    homeHeader.style.top = "0";
+  } else {
+    homeHeader.style.top = "-8rem";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 
 // animation code example with Jquery. For future use
 

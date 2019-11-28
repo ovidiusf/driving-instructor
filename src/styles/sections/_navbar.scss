@@ -8,17 +8,27 @@
   justify-items: center;
   width: 100%;
   background: $primary-color;
-  z-index: inherit;
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   height: 8rem;
+  backdrop-filter: blur(5px);
+  transition: top 0.3s;
   @include respond(tab-port) {
-    // display: inline-flex;
     justify-content: flex-start;
   }
   &.active {
     background: $primary-color-solid;
+  }
+
+  #burger-toggle {
+    right: 30px;
+    justify-content: center;
+    @include respond(phone) {
+      top: 8px;
+      right: 25px;
+    }
   }
 
   // NAV Area
@@ -38,7 +48,7 @@
       justify-items: center;
       @include respond(tab-port) {
         // change to block to see animation
-        display: none;
+        display: flex;
         animation: animate-dropdown-pull 0.5s;
         animation-fill-mode: both;
         flex-direction: column;

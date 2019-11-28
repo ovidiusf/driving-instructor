@@ -113,11 +113,15 @@ a:hover {
   justify-items: center;
   width: 100%;
   background: rgba(101, 157, 189, 0.7);
-  z-index: inherit;
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   height: 8rem;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 @media (max-width: 56.25em) {
@@ -130,6 +134,20 @@ a:hover {
 
 #home-header.active {
   background: rgba(101, 157, 189, 0.95);
+}
+
+#home-header #burger-toggle {
+  right: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 37.5em) {
+  #home-header #burger-toggle {
+    top: 8px;
+    right: 25px;
+  }
 }
 
 #home-header #main-nav {
@@ -165,7 +183,9 @@ a:hover {
 
 @media (max-width: 56.25em) {
   #home-header #main-nav .menu-list {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-animation: animate-dropdown-pull 0.5s;
             animation: animate-dropdown-pull 0.5s;
     -webkit-animation-fill-mode: both;
@@ -645,6 +665,42 @@ a:hover {
 }
 
 #hero {
-  padding: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
+  background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(101, 157, 189, 0.6);
+  border: 2px solid #336f8d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 800px 50px 50px 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 90vw;
+  height: 300px;
+  left: 5vw;
+  top: 150px;
+}
+
+.test {
+  padding-top: 8rem;
+  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,25 +1,31 @@
-#despremine {
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%),
     rgba(101, 157, 189, 0.6);
   border: 2px solid #336f8d;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 800px 50px 50px 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 92vw;
-  height: 300px;
+
+  min-width: 500px;
   left: 2vw;
   right: 2vw;
+  height: 456px;
   top: 150px;
-}
+  padding: 20px;
+  @include respond(phone) {
+    left: 2vw;
+    right: 2vw;
+  }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  h2 {
-    text-align: right;
+  
+
+  #find-more-button {
+    margin-top: 20px;
   }
 }

@@ -1,9 +1,11 @@
+// Big about me section
+
 #despremine {
   margin-top: 600px;
   display: flex;
   justify-content: center;
   justify-items: center;
-  flex-direction: row;
+  flex-direction: column;
   min-width: 500px;
   left: 3vw;
   right: 3vw;
@@ -18,16 +20,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px 100px 100px 50px;
 
-  h2 {
-    margin: 10px;
-    @include respond(phone) {
-      order: 1;
-    }
-  }
-
   @include respond(phone) {
     margin-top: 600px;
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
     background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%),
       rgba(101, 157, 189, 0.6);
     border: 2px solid #336f8d;
@@ -39,35 +34,46 @@
     padding: 20px;
   }
 
-  #despremine-div {
+  .despremine-main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    @include respond(phone){
+      flex-direction: column-reverse;
+    }
+  }
+
+  h2 {
+    margin: 10px;
+  }
+
+  #despremine-img-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    @include respond(phone) {
-      flex-direction: row;
-      order: 2;
-    }
     .despremine-img {
-      // width: 300px;
-      // min-width: 200px;
       height: auto;
-      align-self: flex-start;
-      @include respond(phone) {
-      
-      }
+      // align-self: flex-start;
     }
   }
 
   .despremine-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin: 10px;
     text-align: justify;
     min-width: 200px;
     @include respond(phone) {
       margin: 0px;
-      order: 3;
     }
+  }
+
+  .despremine-btn {
+    display: flex;
+    justify-content: center;
   }
 
   p {

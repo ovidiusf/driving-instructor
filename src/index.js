@@ -9,28 +9,34 @@ let prevScrollpos = window.pageYOffset;
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
-    homeHeader.classList.toggle('active');
-    menuList.classList.toggle('active');
-    menuList.style.display = 'flex';
-    changeBurgerMenuAnimation();
+  menuShowHide();
 });
+
+// hide/show navigation links and burger menu animation
+
+const menuShowHide = () => {
+  homeHeader.classList.toggle('active');
+  menuList.classList.toggle('active');
+  menuList.style.display = 'flex';
+  changeBurgerMenuAnimation();
+};
 
 // changes animation of the burger menu
 const changeBurgerMenuAnimation = () => {
-    for (let i = 0; i < burgerMenuStickComponents.length; i++) {
-        const burgerMenuStickComponentsClassList = burgerMenuStickComponents[i].classList;
-        if(burgerMenuStickComponentsClassList.contains('open') || burgerMenuStickComponentsClassList.contains('close')){
-            burgerMenuStickComponentsClassList.toggle('open');
-            burgerMenuStickComponentsClassList.toggle('close');
-        }else {
-            burgerMenuStickComponentsClassList.toggle('open');
-        } 
+  for (let i = 0; i < burgerMenuStickComponents.length; i++) {
+    const burgerMenuStickComponentsClassList = burgerMenuStickComponents[i].classList;
+    if (burgerMenuStickComponentsClassList.contains('open') || burgerMenuStickComponentsClassList.contains('close')) {
+      burgerMenuStickComponentsClassList.toggle('open');
+      burgerMenuStickComponentsClassList.toggle('close');
+    } else {
+      burgerMenuStickComponentsClassList.toggle('open');
     }
+  }
 };
 
 // hides the navbar when scrolling
 
-window.onscroll = function() {
+window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     homeHeader.style.top = "0";
@@ -39,6 +45,11 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// hide menu links after click
+$('#main-nav > ul > li').on('click', function () {
+  menuShowHide();
+});
 
 
 // animation code example with Jquery. For future use

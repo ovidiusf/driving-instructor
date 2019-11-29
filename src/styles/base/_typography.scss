@@ -3,6 +3,7 @@ h1 {
   font-size: 100px;
   text-align: center;
   margin-bottom: 20px;
+  color: $secondary-color;
   @include respond(phone) {
     font-size: $big-font-size;
     margin-bottom: 10px;

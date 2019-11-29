@@ -1,3 +1,4 @@
+// HERO SECTION
 #hero {
   display: flex;
   align-items: center;
@@ -12,18 +13,18 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 800px 50px 50px 800px;
 
-  min-width: 500px;
+  min-width: 600px;
   left: 2vw;
   right: 2vw;
   height: 456px;
   top: 150px;
   padding: 20px;
-  @include respond(phone) {
+  @include respond(tab-port) {
     left: 2vw;
     right: 2vw;
   }
 
-  #find-more-button {
+  .main-btn {
     margin-top: 20px;
   }
 }

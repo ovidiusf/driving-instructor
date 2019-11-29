@@ -1,18 +1,20 @@
-$color: #c4c4c4;
-
-button {
+.btn {
+  font-size: 100%;
   display: inline-block;
   margin: 0;
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 3rem;
   letter-spacing: 0.15rem;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
+  @include respond(phone){
+    font-size: 2.5rem;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -20,7 +22,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $color;
+    background-color: $button-color;
     border-radius: 10rem;
     z-index: -2;
   }
@@ -31,22 +33,16 @@ button {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: darken($color, 15%);
+    background-color: darken($button-color, 20%);
     transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
   }
   &:hover {
+    transition: all 0.5s ease-in-out;
+    color: #7f0000;
     &:before {
       width: 100%;
     }
-  }
-
-  .hero-btn-content,
-  .despremine-btn-content {
-      font-size: 30px;
-      @include respond(phone){
-          font-size: 20px;
-      }
   }
 }

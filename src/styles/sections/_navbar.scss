@@ -1,6 +1,6 @@
 // HEADER STYLES
 
-// ENTIRE HEADER STYLE
+// PARENT HEADER 
 #home-header {
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
     }
   }
 
-  // NAV Area
+  // NAV AREA (LINKS)
   #main-nav {
     display: flex;
     flex-direction: row;
@@ -47,7 +47,6 @@
       justify-content: center;
       justify-items: center;
       @include respond(tab-port) {
-        // change to block to see animation
         display: flex;
         animation: animate-dropdown-pull 0.5s;
         animation-fill-mode: both;
@@ -102,7 +101,7 @@
   }
 }
 
-// Home
+// HOME ICON
 .home-icon {
   justify-content: center;
   align-items: center;
@@ -124,49 +123,6 @@
   }
 }
 
-// overlay effect
-
-// .active-overlay .burger-menu {
-//   background-color: transparent;
-// }
-
-// .active-overlay .burger-menu::before,
-// .active-overlay .burger-menu::after {
-//   top: 0;
-// }
-
-// .overlay {
-//   background-color: $primary-color-solid;
-//   position: fixed;
-//   right: 0;
-//   left: 0;
-//   top: 0;
-//   bottom: 0;
-//   z-index: 1;
-//   transition: opacity 650ms;
-//   transform: scale(0);
-//   opacity: 0;
-// }
-
-// .overlay.menu-open {
-//   transform: scale(1);
-//   opacity: 1;
-// }
-
-// .nav .overlay ul {
-//   position: relative;
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
-
-// .nav .overlay ul li a {
-//   display: block;
-//   font-size: 2rem;
-//   transition: all 650ms;
-// }
-
 // MENU BAR
 .burger-menu {
   width: 80px;
@@ -179,7 +135,6 @@
   top: 1px;
   right: 15px;
   bottom: 2px;
-  // margin: auto;
   cursor: pointer;
 
   @include respond(tab-port) {

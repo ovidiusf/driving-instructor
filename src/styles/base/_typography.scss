@@ -33,13 +33,13 @@ p,
 a {
   font-family: $default-font-family;
   font-size: $default-font-size;
-  // line-height: 34px;
 }
 
 a {
   font-weight: 600;
   color: #000;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
   &:link,
   &:hover,
   &:visited,

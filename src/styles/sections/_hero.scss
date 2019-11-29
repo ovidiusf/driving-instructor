@@ -6,10 +6,6 @@
   min-height: 456px;
   top: 150px;
   padding: 20px;
-  @include respond(tab-port) {
-    // left: 2vw;
-    // right: 2vw;
-  }
 
   .main-btn {
     margin-top: 20px;

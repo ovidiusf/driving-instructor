@@ -4,13 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
   flex-direction: column;
   min-width: 600px;
-  left: 2vw;
+  left: 1vw;
   right: 2vw;
   min-height: 456px;
 }
+
+@mixin layout-others {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  min-width: 600px;
+  left: 1vw;
+  right: 2vw;
+  min-height: 456px;
+}
+
 
 @mixin background-desktop {
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%),
@@ -22,7 +35,7 @@
 }
 
 @mixin background-mobile {
-    background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%),
+  background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%),
     rgba(101, 157, 189, 0.6);
   border: 2px solid #336f8d;
   box-sizing: border-box;
@@ -37,4 +50,13 @@
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px 800px 800px 50px;
+}
+
+@mixin background-others {
+  background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 73.44%),
+    rgba(101, 157, 189, 0.6);
+  border: 2px solid #336f8d;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
 }

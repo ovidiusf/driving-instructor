@@ -1,0 +1,35 @@
+#galerie {
+  @include layout;
+  @include background-others;
+  // align-content: flex-start;
+  margin-top: 200px;
+  padding: 20px 20px 20px 20px;
+  .galerie-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .galerie-bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    flex-basis: 50%;
+    object-fit: cover;
+    .top {
+      width: 372px;
+      height: 348‬px;
+    }
+
+    .bottom {
+      width: 745px;
+      height: 400px;
+    }
+  }
+}

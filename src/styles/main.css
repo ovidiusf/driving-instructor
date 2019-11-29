@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -29,7 +30,6 @@ html {
 body {
   font-family: "Franklin Gothic Book", sans-serif;
   display: block;
-  min-width: 400px;
 }
 
 html,
@@ -146,7 +146,7 @@ a:hover {
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   cursor: pointer;
 }
 
@@ -767,13 +767,13 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 600px;
-  left: 2vw;
+  left: 1vw;
   right: 2vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
@@ -803,13 +803,13 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 600px;
-  left: 2vw;
+  left: 1vw;
   right: 2vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.85%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
@@ -820,8 +820,7 @@ a:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px 800px 800px 50px;
-  margin-top: 600px;
-  top: 150px;
+  margin-top: 300px;
   padding: 20px 100px 0px 60px;
 }
 
@@ -924,10 +923,164 @@ a:hover {
   line-height: 1.6;
 }
 
+#cursuriauto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 600px;
+  left: 1vw;
+  right: 2vw;
+  min-height: 456px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
+  background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(101, 157, 189, 0.6);
+  border: 2px solid #336f8d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 800px 50px 50px 800px;
+  margin-top: 200px;
+  padding: 20px 60px 0px 60px;
+}
+
+@media (max-width: 56.25em) {
+  #cursuriauto {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
+    background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(101, 157, 189, 0.6);
+    border: 2px solid #336f8d;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px 100px 100px 50px;
+    padding: 20px;
+  }
+}
+
+#cursuriauto h2 {
+  margin: 10px;
+}
+
+#cursuriauto p {
+  font-size: 2.3em;
+  line-height: 1.6;
+}
+
+#cursuriauto .cursuriauto-content {
+  text-align: justify;
+}
+
+#cursuriauto .cursuriauto-btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#cursuriauto .cursuriauto-btn {
+  margin: 20px;
+}
+
 #main-section {
   display: block;
   width: 100%;
-  padding-left: 5%;
+  padding-left: 4%;
   padding-right: 5%;
+}
+
+#galerie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 600px;
+  left: 1vw;
+  right: 2vw;
+  min-height: 456px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(73.44%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
+  background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 73.44%), rgba(101, 157, 189, 0.6);
+  border: 2px solid #336f8d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  margin-top: 200px;
+  padding: 20px 20px 20px 20px;
+}
+
+#galerie .galerie-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#galerie .galerie-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#galerie img {
+  height: auto;
+  width: 100%;
+  margin: 10px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#galerie img .top {
+  width: 372px;
+  height: 348‬px;
+}
+
+#galerie img .bottom {
+  width: 745px;
+  height: 400px;
 }
 /*# sourceMappingURL=main.css.map */

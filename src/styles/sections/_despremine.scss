@@ -2,13 +2,11 @@
 #despremine {
   @include layout;
   @include background-desktop-mirrored;
-  margin-top: 600px;
-  top: 150px;
+  margin-top: 300px;
   padding: 20px 100px 0px 60px;
 
   @include respond(tab-port) {
     @include background-mobile;
-    // min-width: 600px;
     height: 850px;
     padding: 20px;
   }
@@ -34,7 +32,6 @@
     margin: 10px;
     .despremine-img {
       height: auto;
-      // align-self: flex-start;
     }
   }
 

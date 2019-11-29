@@ -1,0 +1,31 @@
+#cursuriauto {
+  @include layout;
+  @include background-desktop;
+  margin-top: 200px;
+  padding: 20px 60px 0px 60px;
+
+  @include respond(tab-port) {
+    @include background-mobile;
+    padding: 20px;
+  }
+  h2 {
+    margin: 10px;
+  }
+  p {
+    font-size: $paragraph-font-size;
+    line-height: 1.6;
+  }
+  .cursuriauto-content {
+    text-align: justify;
+    @include respond(tab-port) {
+    }
+  }
+  .cursuriauto-btn-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .cursuriauto-btn {
+    margin: 20px;
+  }
+}

@@ -10,7 +10,7 @@
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   cursor: pointer;
   @include respond(phone){
     font-size: 2.5rem;

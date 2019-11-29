@@ -45,10 +45,11 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
-
 // hide menu links after click
 $('#main-nav > ul > li').on('click', function () {
-  menuShowHide();
+  if(window.innerWidth < 900){
+    menuShowHide();
+  }
 });
 
 

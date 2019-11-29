@@ -5,6 +5,8 @@ const burgerMenuToggle = document.querySelector('#burger-toggle');
 const homeHeader = document.querySelector('#home-header');
 const burgerMenuStickComponents = document.getElementsByClassName('stick');
 let prevScrollpos = window.pageYOffset;
+const windowCurrentWidth = 900;
+const headerHeight = "-8rem";
 
 
 // changes behaviour of the navigation bar when mobile
@@ -41,13 +43,14 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     homeHeader.style.top = "0";
   } else {
-    homeHeader.style.top = "-8rem";
+    homeHeader.style.top = headerHeight;
   }
   prevScrollpos = currentScrollPos;
 }
+
 // hide menu links after click
 $('#main-nav > ul > li').on('click', function () {
-  if(window.innerWidth < 900){
+  if(window.innerWidth < windowCurrentWidth){
     menuShowHide();
   }
 });

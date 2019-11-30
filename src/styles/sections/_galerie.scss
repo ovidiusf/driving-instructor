@@ -14,22 +14,22 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 20px;
   }
-
-  img {
+  .img-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .top {
     height: auto;
+    max-width: 500px;
     width: 100%;
-    margin: 10px;
-    flex-basis: 50%;
-    object-fit: cover;
-    .top {
-      width: 372px;
-      height: 348‬px;
-    }
-
-    .bottom {
-      width: 745px;
-      height: 400px;
-    }
+  }
+  .bottom {
+    height: auto;
+    max-width: 1045px;
+    width: 100%;
+    border-radius: 10px;
   }
 }

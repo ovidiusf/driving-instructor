@@ -20,8 +20,10 @@ Driving instructor webpage designed from scratch.
 * Responsive about me section (title, description, button, picture)
 * Responsive driving lessons section (title,description, two buttons)
 * Responsive gallery (5 pictures, 4 in a container, 1 single)
+* Responsive testimonials (WIP)
 
 ## Planned features
 
 * nice wheel effect
 * scroll reveal effect
+* contact section

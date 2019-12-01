@@ -1,0 +1,45 @@
+#testimoniale {
+  @include layout;
+  @include background-others;
+  margin-top: 200px;
+  padding: 60px 60px 60px 60px;
+  p {
+    font-size: $paragraph-font-size;
+    line-height: 1.6;
+    font-style: italic;
+    margin-right: 20px;
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    @include respond(tab-port){
+        flex-direction: column;
+    }
+
+    .testimonial-content {
+    //   margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    //   margin-right: 20px;
+    }
+
+    .img-container-testimonial {
+      display: flex;
+      justify-content: center;
+      margin-right: 50px;
+      margin-left: 50px;
+
+      .testimonial-img {
+        height: 300px;
+        width: 300px;
+        @include respond(tab-port){
+            height: auto;
+            max-width: 275px;
+        }
+      }
+    }
+  }
+}

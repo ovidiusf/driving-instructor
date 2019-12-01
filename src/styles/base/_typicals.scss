@@ -12,17 +12,17 @@
   min-height: 456px;
 }
 
-@mixin layout-others {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex-direction: row;
-  min-width: 600px;
-  left: 1vw;
-  right: 2vw;
-  min-height: 456px;
-}
+// @mixin layout-others {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   flex-direction: row;
+//   min-width: 600px;
+//   left: 1vw;
+//   right: 2vw;
+//   min-height: 456px;
+// }
 
 
 @mixin background-desktop {

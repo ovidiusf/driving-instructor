@@ -20,6 +20,7 @@ h2 {
   text-align: center;
   font-size: 60px;
   color: $secondary-color;
+  margin: 10px;
   @include respond(phone) {
     font-size: $title-font-size;
   }
@@ -31,6 +32,13 @@ h3 {
   font-style: italic;
   margin-left: auto;
   @include respond(phone) {
+    font-size: $mid-font-size;
+  }
+}
+h4 {
+  text-align: left;
+  font-size: 40px;
+  @include respond(phone){
     font-size: $mid-font-size;
   }
 }

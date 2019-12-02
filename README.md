@@ -20,10 +20,13 @@ Driving instructor webpage designed from scratch.
 * Responsive about me section (title, description, button, picture)
 * Responsive driving lessons section (title,description, two buttons)
 * Responsive gallery (5 pictures, 4 in a container, 1 single)
-* Responsive testimonials (WIP)
+* Responsive testimonials
+* Responsive contact page
 
 ## Planned features
 
-* nice wheel effect
-* scroll reveal effect
-* contact section
+* nice wheel rotating effect in driving lessons (svg implementation)
+* scroll reveal effect with JS
+* contact section icon animations
+* real information
+* h1 title animation with animate.css

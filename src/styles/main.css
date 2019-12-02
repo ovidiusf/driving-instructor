@@ -1436,6 +1436,7 @@ a:hover {
 #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img {
   height: 125px;
   width: 125px;
+  cursor: pointer;
 }
 
 @media (max-width: 37.5em) {

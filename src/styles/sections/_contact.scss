@@ -1,0 +1,86 @@
+#contact {
+  @include layout;
+  @include background-others;
+  margin-top: 200px;
+
+  .form-email-container {
+    .form-email {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+  }
+  .contact-facebook-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    .contact-facebook-icon {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 10px;
+      @include respond(phone) {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        flex-direction: row;
+      }
+      .contact-facebook-icon-img {
+        height: 125px;
+        width: 125px;
+        @include respond(phone) {
+          height: 75px;
+          width: 75px;
+        }
+      }
+    }
+    .fb-page {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+
+  .contact-email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+    .contact-email-icon {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 10px;
+      @include respond(tab-land) {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        flex-direction: row;
+      }
+      .contact-email-icon-img {
+        cursor: pointer;
+      }
+    }
+    .email-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      @include respond(tab-land) {
+        margin-bottom: 10px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 35px;
+        @include respond(tab-port) {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

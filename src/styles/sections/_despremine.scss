@@ -7,10 +7,12 @@
 
   @include respond(tab-port) {
     @include background-mobile;
-    height: 850px;
+    height: 1000px;
     padding: 20px;
   }
-
+  @include respond(phone-xs) {
+    height: 1200px;
+  }
   .despremine-main-content {
     display: flex;
     justify-content: center;

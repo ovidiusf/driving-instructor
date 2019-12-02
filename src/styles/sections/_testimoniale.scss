@@ -8,22 +8,52 @@
     line-height: 1.6;
     font-style: italic;
     margin-right: 20px;
+    margin-left: 40px;
   }
   .testimonial-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 50px;
-    @include respond(tab-port){
-        flex-direction: column;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    @include respond(phone-xs) {
+      width: 350px;
     }
 
     .testimonial-content {
-    //   margin-left: 30px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-    //   margin-right: 20px;
+      .quotation-container,
+      .quotation-container-end {
+        display: flex;
+        .quotation-marks,
+        .quotation-marks-end {
+          height: 75px;
+          width: 75px;
+          @include respond(tab-port) {
+            height: 50px;
+            width: 50px;
+          }
+        }
+        .quotation-marks-end {
+          transform: rotate(180deg);
+        }
+      }
+      .quotation-container {
+        justify-content: flex-start;
+      }
+      .quotation-container-end {
+        justify-content: flex-end;
+        margin-right: 10px;
+        margin-top: -10px;
+        @include respond(phone) {
+          // margin-top: -10px;
+          margin-right: 50px;
+        }
+      }
     }
 
     .img-container-testimonial {
@@ -35,9 +65,9 @@
       .testimonial-img {
         height: 300px;
         width: 300px;
-        @include respond(tab-port){
-            height: auto;
-            max-width: 275px;
+        @include respond(tab-port) {
+          height: auto;
+          max-width: 275px;
         }
       }
     }

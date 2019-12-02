@@ -8,6 +8,7 @@
     @include background-mobile;
     padding: 20px;
   }
+ 
   p {
     font-size: $paragraph-font-size;
     line-height: 1.6;
@@ -24,5 +25,11 @@
   }
   .cursuriauto-btn {
     margin: 20px;
+    @include respond(phone){
+      margin: 10px;
+    }
+    @include respond(phone-xs){
+      margin: 2px;
+    }
   }
 }

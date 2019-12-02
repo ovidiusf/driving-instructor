@@ -30,3 +30,4 @@ Driving instructor webpage designed from scratch.
 * contact section icon animations
 * real information
 * h1 title animation with animate.css
+* return home/up button below contact and above footer

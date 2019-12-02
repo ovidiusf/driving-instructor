@@ -81,6 +81,9 @@
         @include respond(tab-port) {
           font-size: 25px;
         }
+        @include respond(phone) {
+          font-size: 15px;
+        }
       }
     }
   }

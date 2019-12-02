@@ -22,11 +22,15 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    @include respond(phone){
+      flex-direction: column;
+      align-items: center;
+    }
   }
   .cursuriauto-btn {
     margin: 20px;
     @include respond(phone){
-      margin: 10px;
+      margin: 5px;
     }
     @include respond(phone-xs){
       margin: 2px;

@@ -5,14 +5,12 @@ const burgerMenuToggle = document.querySelector('#burger-toggle');
 const homeHeader = document.querySelector('#home-header');
 const burgerMenuStickComponents = document.getElementsByClassName('stick');
 const listItemsNav = document.querySelectorAll("#main-nav > ul > li");
-const despreMineSection = document.querySelector('#despremine');
 let prevScrollpos = window.pageYOffset;
 const windowCurrentWidth = 900;
 // const headerHeight = "-8rem";
 const headerHeight = - homeHeader.offsetHeight + "px";
 // console.log(headerHeight);
 const returnToTopButton = document.querySelector('#return-to-top');
-
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
@@ -69,6 +67,18 @@ returnToTopButton.addEventListener('click', function () {
   $('body,html').animate({
     scrollTop: 0
   }, 500);
+});
+
+// adds space between the top of the window and the next section
+
+$('a').on('click',function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href')),
+      p = $(target).offset().top,
+      offset = 50;
+  
+  $(target).hasClass('space') && (p = p - offset);
+  $('body, html').animate({ 'scrollTop': p }, 100);
 });
 
 

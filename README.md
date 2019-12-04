@@ -10,6 +10,10 @@ Driving instructor webpage designed from scratch.
 * SaSS
 * JavaScript
 
+## Figma Design
+
+[Figma Design] (https://www.figma.com/file/07bRDBnSOsvuMe9aQjipxs/Scoala-Instructor?node-id=0%3A1)
+
 ## Current Features
 
 * Fully responsive navbar

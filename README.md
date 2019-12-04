@@ -22,6 +22,8 @@ Driving instructor webpage designed from scratch.
 * Responsive gallery (5 pictures, 4 in a container, 1 single)
 * Responsive testimonials
 * Responsive contact page
+* h1 title animation with animate.css
+* return home/up button below contact and above footer
 
 ## Planned features
 
@@ -29,5 +31,4 @@ Driving instructor webpage designed from scratch.
 * scroll reveal effect with JS
 * contact section icon animations
 * real information
-* h1 title animation with animate.css
-* return home/up button below contact and above footer
+

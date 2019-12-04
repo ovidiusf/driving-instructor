@@ -4,9 +4,13 @@ const mainNav = document.querySelector('#main-nav');
 const burgerMenuToggle = document.querySelector('#burger-toggle');
 const homeHeader = document.querySelector('#home-header');
 const burgerMenuStickComponents = document.getElementsByClassName('stick');
+const listItemsNav = document.querySelectorAll("#main-nav > ul > li");
 let prevScrollpos = window.pageYOffset;
 const windowCurrentWidth = 900;
 const headerHeight = "-8rem";
+const returnToTopButton = document.querySelector('#return-to-top');
+console.log($('#return-to-top'));
+console.log(returnToTopButton);
 
 
 // changes behaviour of the navigation bar when mobile
@@ -48,20 +52,27 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 }
 
-// hide menu links after click
-$('#main-nav > ul > li').on('click', function () {
-  if (window.innerWidth < windowCurrentWidth) {
-    menuShowHide();
-  }
-});
+// $('#main-nav > ul > li').on('click', function () {
+//   if (window.innerWidth < windowCurrentWidth) {
+//     menuShowHide();
+//   }
+// });
 
+// hide menu links after click
+mainNav.addEventListener('click', function () {
+  listItemsNav.forEach(() => {
+    if (window.innerWidth < windowCurrentWidth) {
+      menuShowHide();
+    }
+  })
+
+});
 
 // Back to top function, when arrow is clicked.
 
-$('#return-to-top').click(function () { 
+returnToTopButton.addEventListener('click', function() {
   $('body,html').animate({
-    scrollTop: 0                       
-  }, 500);
+    scrollTop: 0}, 500);
 });
 
 

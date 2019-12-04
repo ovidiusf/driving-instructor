@@ -3,7 +3,7 @@ footer {
   background: $primary-color;
   display: block;
   position: relative;
-  margin-top: 200px;
+  margin-top: 100px;
   height: 150px;
   box-sizing: border-box;
   @include respond(tab-port){
@@ -29,18 +29,15 @@ footer {
     #return-to-top {
       position: relative;
       top: 20px;
-      //   right: 10px;
       background: rgb(0, 0, 0);
       background: rgba(0, 0, 0, 0.7);
       width: 50px;
       height: 50px;
-      //   display: block;
       display: inline-block;
       text-decoration: none;
       -webkit-border-radius: 35px;
       -moz-border-radius: 35px;
       border-radius: 35px;
-      //   display: none;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
@@ -51,7 +48,7 @@ footer {
       color: #fff;
       //   margin: 0;
       position: relative;
-      left: 1px;
+    //   left: 1px;
       top: 13px;
       font-size: 19px;
       -webkit-transition: all 0.3s ease;

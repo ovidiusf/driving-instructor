@@ -69,6 +69,12 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #2E1114;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
 }
 
 @media (max-width: 37.5em) {
@@ -162,10 +168,9 @@ a:hover {
 
 @media (max-width: 37.5em) {
   .btn {
-    font-size: 2.5rem;
     text-align: center;
     padding: 0.5rem 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -1571,7 +1576,7 @@ footer {
   background: rgba(101, 157, 189, 0.7);
   display: block;
   position: relative;
-  margin-top: 200px;
+  margin-top: 100px;
   height: 150px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1626,7 +1631,6 @@ footer .footer-container #return-to-top {
 footer .footer-container #return-to-top i {
   color: #fff;
   position: relative;
-  left: 1px;
   top: 13px;
   font-size: 19px;
   -webkit-transition: all 0.3s ease;

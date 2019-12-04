@@ -8,7 +8,7 @@
   flex-direction: column;
   min-width: 600px;
   left: 1vw;
-  // right: 2vw;
+  right: 1vw;
   min-height: 456px;
   @include respond(phone){
     left:0vw;

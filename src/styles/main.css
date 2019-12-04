@@ -18,8 +18,6 @@
 
 1em = 16px
 
-ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
-
 */
 html {
   font-size: 62.5%;
@@ -35,6 +33,7 @@ html,
 body {
   margin: 0;
   height: 100%;
+  min-width: 650px;
 }
 
 body::after {
@@ -788,6 +787,7 @@ a:hover {
           flex-direction: column;
   min-width: 600px;
   left: 1vw;
+  right: 1vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(101, 157, 189, 0.6);
@@ -836,6 +836,7 @@ a:hover {
           flex-direction: column;
   min-width: 600px;
   left: 1vw;
+  right: 1vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.85%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.85%), rgba(101, 157, 189, 0.6);
@@ -980,6 +981,7 @@ a:hover {
           flex-direction: column;
   min-width: 600px;
   left: 1vw;
+  right: 1vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(101, 157, 189, 0.6);
@@ -1074,7 +1076,7 @@ a:hover {
   display: block;
   width: 100%;
   padding-left: 4%;
-  padding-right: 5%;
+  padding-right: 4%;
 }
 
 #galerie {
@@ -1094,6 +1096,7 @@ a:hover {
           flex-direction: column;
   min-width: 600px;
   left: 1vw;
+  right: 1vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(73.44%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 73.44%), rgba(101, 157, 189, 0.6);
@@ -1189,6 +1192,7 @@ a:hover {
           flex-direction: column;
   min-width: 600px;
   left: 1vw;
+  right: 1vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(73.44%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 73.44%), rgba(101, 157, 189, 0.6);
@@ -1356,6 +1360,7 @@ a:hover {
           flex-direction: column;
   min-width: 600px;
   left: 1vw;
+  right: 1vw;
   min-height: 456px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(73.44%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
   background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 73.44%), rgba(101, 157, 189, 0.6);
@@ -1559,5 +1564,81 @@ a:hover {
   #contact .contact-email-container .email-text h4 {
     font-size: 15px;
   }
+}
+
+footer {
+  width: 100%;
+  background: rgba(101, 157, 189, 0.7);
+  display: block;
+  position: relative;
+  margin-top: 200px;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 56.25em) {
+  footer {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 20em) {
+  footer {
+    min-width: 350px;
+  }
+}
+
+footer .footer-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+footer .footer-container p {
+  margin-top: 40px;
+}
+
+@media (max-width: 37.5em) {
+  footer .footer-container p {
+    font-size: 18px;
+  }
+}
+
+footer .footer-container #return-to-top {
+  position: relative;
+  top: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 35px;
+  -webkit-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .footer-container #return-to-top i {
+  color: #fff;
+  position: relative;
+  left: 1px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .footer-container #return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+footer .footer-container #return-to-top:hover i {
+  color: #fff;
+  top: 5px;
 }
 /*# sourceMappingURL=main.css.map */

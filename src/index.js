@@ -50,9 +50,18 @@ window.onscroll = function () {
 
 // hide menu links after click
 $('#main-nav > ul > li').on('click', function () {
-  if(window.innerWidth < windowCurrentWidth){
+  if (window.innerWidth < windowCurrentWidth) {
     menuShowHide();
   }
+});
+
+
+// Back to top function, when arrow is clicked.
+
+$('#return-to-top').click(function () { 
+  $('body,html').animate({
+    scrollTop: 0                       
+  }, 500);
 });
 
 

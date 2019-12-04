@@ -10,9 +10,8 @@
 
 1em = 16px
 
-ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
-
-*/
+*/ 
+// MEDIA QUERY CHECKING: if breakpoint, pass certain content.
 @mixin respond($breakpoint) {
   // Phone-xs
   @if $breakpoint == phone-xs {
@@ -46,9 +45,9 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   }
 }
 
-// Border White Mixin
-@mixin section-borders {
-  border: 1.5rem solid #fff;
-  border-top: 0;
-  border-bottom: 0;
-}
+// // Border White Mixin
+// @mixin section-borders {
+//   border: 1.5rem solid #fff;
+//   border-top: 0;
+//   border-bottom: 0;
+// }

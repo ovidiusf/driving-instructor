@@ -12,7 +12,7 @@ Driving instructor webpage designed from scratch.
 
 ## Figma Design
 
-[Figma Design] (https://www.figma.com/file/07bRDBnSOsvuMe9aQjipxs/Scoala-Instructor?node-id=0%3A1)
+[Figma Design](https://www.figma.com/file/07bRDBnSOsvuMe9aQjipxs/Scoala-Instructor?node-id=0%3A1)
 
 ## Current Features
 

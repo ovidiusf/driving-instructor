@@ -7,11 +7,8 @@ const burgerMenuStickComponents = document.getElementsByClassName('stick');
 const listItemsNav = document.querySelectorAll("#main-nav > ul > li");
 let prevScrollpos = window.pageYOffset;
 const windowCurrentWidth = 900;
-const headerHeight = "-8rem";
+const headerHeight = "-7.9rem";
 const returnToTopButton = document.querySelector('#return-to-top');
-console.log($('#return-to-top'));
-console.log(returnToTopButton);
-
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {

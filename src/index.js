@@ -7,8 +7,8 @@ const burgerMenuStickComponents = document.getElementsByClassName('stick');
 const listItemsNav = document.querySelectorAll("#main-nav > ul > li");
 let prevScrollpos = window.pageYOffset;
 const windowCurrentWidth = 900;
-// const headerHeight = "-8rem";
-const headerHeight = - homeHeader.offsetHeight +"px";
+const headerHeight = "-8rem";
+// const headerHeight = - homeHeader.offsetHeight +"px";
 console.log(headerHeight);
 const returnToTopButton = document.querySelector('#return-to-top');
 

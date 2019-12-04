@@ -5,12 +5,14 @@ const burgerMenuToggle = document.querySelector('#burger-toggle');
 const homeHeader = document.querySelector('#home-header');
 const burgerMenuStickComponents = document.getElementsByClassName('stick');
 const listItemsNav = document.querySelectorAll("#main-nav > ul > li");
+const despreMineSection = document.querySelector('#despremine');
 let prevScrollpos = window.pageYOffset;
 const windowCurrentWidth = 900;
 // const headerHeight = "-8rem";
-const headerHeight = - homeHeader.offsetHeight +"px";
+const headerHeight = - homeHeader.offsetHeight + "px";
 // console.log(headerHeight);
 const returnToTopButton = document.querySelector('#return-to-top');
+
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
@@ -51,12 +53,6 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 }
 
-// $('#main-nav > ul > li').on('click', function () {
-//   if (window.innerWidth < windowCurrentWidth) {
-//     menuShowHide();
-//   }
-// });
-
 // hide menu links after click
 mainNav.addEventListener('click', function () {
   listItemsNav.forEach(() => {
@@ -69,9 +65,10 @@ mainNav.addEventListener('click', function () {
 
 // Back to top function, when arrow is clicked.
 
-returnToTopButton.addEventListener('click', function() {
+returnToTopButton.addEventListener('click', function () {
   $('body,html').animate({
-    scrollTop: 0}, 500);
+    scrollTop: 0
+  }, 500);
 });
 
 

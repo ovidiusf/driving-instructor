@@ -8,7 +8,8 @@ h1 {
   animation-delay: 2s;
   animation-iteration-count: 2;
   @include respond(phone) {
-    font-size: $big-font-size;
+    // font-size: $big-font-size;
+    font-size: 100px;
     margin-bottom: 10px;
   }
 }

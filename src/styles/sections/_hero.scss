@@ -6,6 +6,9 @@
   min-height: 456px;
   top: 150px;
   padding: 20px;
+  @include respond(phone){
+    top: 350px;
+  }
 
   .main-btn {
     margin-top: 20px;

@@ -10,6 +10,9 @@
     height: 1000px;
     padding: 20px;
   }
+  @include respond(phone){
+    margin-top: 800px;
+  }
   @include respond(phone-xs) {
     height: 1200px;
   }

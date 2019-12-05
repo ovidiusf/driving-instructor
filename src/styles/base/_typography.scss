@@ -9,11 +9,11 @@ h1 {
   animation-iteration-count: 2;
   @include respond(phone) {
     // font-size: $big-font-size;
-    font-size: 90px;
+    font-size: 85px;
     margin-bottom: 10px;
   }
   @include respond(phone-xs){
-    font-size: 85px;
+    font-size: 80px;
   }
 }
 

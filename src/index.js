@@ -84,12 +84,15 @@ $('a').on('click', function (e) {
 
 window.onload = function () {
 
-  if (window.innerWidth <= 500) {
+  if (window.innerWidth <= 450) {
 
     var mvp = document.getElementById('myViewport'); 
-    mvp.setAttribute('content', 'width=500');
+    mvp.setAttribute('content', 'width=450');
+    console.log(mvp);
   }
 }
+
+
 
 // animation code example with Jquery. For future use
 

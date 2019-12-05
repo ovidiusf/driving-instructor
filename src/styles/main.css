@@ -34,6 +34,13 @@ body {
   position: absolute;
 }
 
+@media (max-width: 37.5em) {
+  html,
+  body {
+    zoom: 90%;
+  }
+}
+
 body::after {
   content: "";
   background: url(../assets/background.png) no-repeat center center fixed;

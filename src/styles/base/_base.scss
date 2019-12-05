@@ -22,7 +22,10 @@ body {
   // width: 100%;
   
 //   max-width: 100%;
-  // zoom: 99%;
+  
+  @include respond(phone){
+    zoom: 90%;
+  }
 }
 
 // Set background image

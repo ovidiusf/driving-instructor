@@ -9,7 +9,6 @@ let prevScrollpos = window.pageYOffset;
 const windowCurrentWidth = 900;
 // const headerHeight = "-8rem";
 const headerHeight = - homeHeader.offsetHeight + "px";
-// console.log(headerHeight);
 const returnToTopButton = document.querySelector('#return-to-top');
 
 // changes behaviour of the navigation bar when mobile
@@ -17,8 +16,8 @@ burgerMenuToggle.addEventListener('click', function () {
   menuShowHide();
 });
 
-// hide/show navigation links and burger menu animation
 
+// hide/show navigation links and burger menu animation. hides menu internally when not visible
 const menuShowHide = () => {
   homeHeader.classList.toggle('active');
   menuList.classList.toggle('active');
@@ -49,7 +48,6 @@ const changeBurgerMenuAnimation = () => {
 };
 
 // hides the navbar when scrolling
-
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {

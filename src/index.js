@@ -58,7 +58,6 @@ mainNav.addEventListener('click', function () {
       menuShowHide();
     }
   })
-
 });
 
 // Back to top function, when arrow is clicked.
@@ -71,15 +70,17 @@ returnToTopButton.addEventListener('click', function () {
 
 // adds space between the top of the window and the next section
 
-$('a').on('click', function (e) {
-  e.preventDefault();
-  var target = $($(this).attr('href')),
-    p = $(target).offset().top,
-    offset = 50;
+// $('a').on('click', function (e) {
+//   e.preventDefault();
+//   var target = ($(this).attr('href'));
+//     p = $(target).offset().top;
+//     offset = 50;
+//     console.log(target);
+//     console.log(p);
 
-  $(target).hasClass('space') && (p = p - offset);
-  $('body, html').animate({ 'scrollTop': p }, 100);
-});
+//   $(target).hasClass('space') && (p = p - offset);
+//   $('body, html').animate({ 'scrollTop': p }, 100);
+// });
 
 
 // window.onload = function () {

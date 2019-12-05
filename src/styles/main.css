@@ -794,7 +794,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 600px;
   left: 1vw;
   right: 1vw;
   min-height: 456px;
@@ -814,13 +813,6 @@ a:hover {
 @media (max-width: 37.5em) {
   #hero {
     left: 0vw;
-    min-width: 400px;
-  }
-}
-
-@media (max-width: 20em) {
-  #hero {
-    min-width: 350px;
   }
 }
 
@@ -849,7 +841,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 600px;
   left: 1vw;
   right: 1vw;
   min-height: 456px;
@@ -868,13 +859,6 @@ a:hover {
 @media (max-width: 37.5em) {
   #despremine {
     left: 0vw;
-    min-width: 400px;
-  }
-}
-
-@media (max-width: 20em) {
-  #despremine {
-    min-width: 350px;
   }
 }
 
@@ -1000,7 +984,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 600px;
   left: 1vw;
   right: 1vw;
   min-height: 456px;
@@ -1019,13 +1002,6 @@ a:hover {
 @media (max-width: 37.5em) {
   #cursuriauto {
     left: 0vw;
-    min-width: 400px;
-  }
-}
-
-@media (max-width: 20em) {
-  #cursuriauto {
-    min-width: 350px;
   }
 }
 
@@ -1115,7 +1091,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 600px;
   left: 1vw;
   right: 1vw;
   min-height: 456px;
@@ -1134,13 +1109,6 @@ a:hover {
 @media (max-width: 37.5em) {
   #galerie {
     left: 0vw;
-    min-width: 400px;
-  }
-}
-
-@media (max-width: 20em) {
-  #galerie {
-    min-width: 350px;
   }
 }
 
@@ -1211,7 +1179,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 600px;
   left: 1vw;
   right: 1vw;
   min-height: 456px;
@@ -1230,13 +1197,6 @@ a:hover {
 @media (max-width: 37.5em) {
   #testimoniale {
     left: 0vw;
-    min-width: 400px;
-  }
-}
-
-@media (max-width: 20em) {
-  #testimoniale {
-    min-width: 350px;
   }
 }
 
@@ -1379,7 +1339,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 600px;
   left: 1vw;
   right: 1vw;
   min-height: 456px;
@@ -1397,13 +1356,6 @@ a:hover {
 @media (max-width: 37.5em) {
   #contact {
     left: 0vw;
-    min-width: 400px;
-  }
-}
-
-@media (max-width: 20em) {
-  #contact {
-    min-width: 350px;
   }
 }
 
@@ -1596,18 +1548,6 @@ footer {
   height: 150px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-@media (max-width: 56.25em) {
-  footer {
-    min-width: 600px;
-  }
-}
-
-@media (max-width: 20em) {
-  footer {
-    min-width: 350px;
-  }
 }
 
 footer .footer-container {

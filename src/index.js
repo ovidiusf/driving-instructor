@@ -71,16 +71,25 @@ returnToTopButton.addEventListener('click', function () {
 
 // adds space between the top of the window and the next section
 
-$('a').on('click',function(e){
+$('a').on('click', function (e) {
   e.preventDefault();
   var target = $($(this).attr('href')),
-      p = $(target).offset().top,
-      offset = 50;
-  
+    p = $(target).offset().top,
+    offset = 50;
+
   $(target).hasClass('space') && (p = p - offset);
   $('body, html').animate({ 'scrollTop': p }, 100);
 });
 
+
+window.onload = function () {
+
+  if (window.innerWidth <= 500) {
+
+    var mvp = document.getElementById('myViewport'); 
+    mvp.setAttribute('content', 'width=500');
+  }
+}
 
 // animation code example with Jquery. For future use
 

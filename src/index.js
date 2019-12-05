@@ -84,10 +84,10 @@ $('a').on('click', function (e) {
 
 window.onload = function () {
 
-  if (window.innerWidth <= 450) {
+  if (window.innerWidth <= 360) {
 
     var mvp = document.getElementById('myViewport'); 
-    mvp.setAttribute('content', 'width=450');
+    mvp.setAttribute('content', 'width=360');
     console.log(mvp);
   }
 }

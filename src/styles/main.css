@@ -957,7 +957,6 @@ a:hover {
           flex-direction: column;
   margin: 10px;
   text-align: justify;
-  min-width: 200px;
 }
 
 @media (max-width: 56.25em) {
@@ -1240,12 +1239,6 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media (max-width: 20em) {
-  #testimoniale .testimonial-container {
-    width: 350px;
   }
 }
 

@@ -42,7 +42,7 @@
     flex-direction: column;
     margin: 10px;
     text-align: justify;
-    min-width: 200px;
+    // min-width: 200px;
     @include respond(tab-port) {
       margin: 0px;
     }

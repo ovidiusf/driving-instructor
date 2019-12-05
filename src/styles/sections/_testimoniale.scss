@@ -19,7 +19,7 @@
       flex-direction: column;
     }
     @include respond(phone-xs) {
-      width: 350px;
+      // width: 350px;
     }
 
     .testimonial-content {

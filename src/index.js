@@ -23,6 +23,15 @@ const menuShowHide = () => {
   homeHeader.classList.toggle('active');
   menuList.classList.toggle('active');
   menuList.style.display = 'flex';
+
+  if(!menuList.classList.contains('visible')){
+    menuList.classList.toggle('visible');
+  }else {
+    setTimeout(function(){
+      menuList.classList.toggle('visible');
+    }, 500);
+  }
+  
   changeBurgerMenuAnimation();
 };
 

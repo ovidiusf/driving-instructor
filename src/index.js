@@ -82,14 +82,14 @@ $('a').on('click', function (e) {
 });
 
 
-window.onload = function () {
+// window.onload = function () {
 
-  if (window.innerWidth <= 360) {
+//   if (window.innerWidth <= 360) {
 
-    var mvp = document.getElementById('myViewport'); 
-    mvp.setAttribute('content', 'width=360');
-  }
-}
+//     var mvp = document.getElementById('myViewport'); 
+//     mvp.setAttribute('content', 'width=360');
+//   }
+// }
 
 
 

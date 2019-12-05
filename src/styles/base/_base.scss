@@ -1,20 +1,28 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 body {
   font-family: "Franklin Gothic Book", sans-serif;
   display: block;
+  position: absolute;
+  // min-height: 100%;
+  // min-width: 600px;
 }
 
 html,
 body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  min-width: 650px;
-  max-width: 100%;
+  // margin: 0;
+  // height: 100%;
+  // width: 100%;
+  
+//   max-width: 100%;
+  // zoom: 99%;
 }
 
 // Set background image

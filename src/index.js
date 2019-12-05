@@ -23,14 +23,14 @@ const menuShowHide = () => {
   menuList.classList.toggle('active');
   menuList.style.display = 'flex';
 
-  if(!menuList.classList.contains('visible')){
+  if (!menuList.classList.contains('visible')) {
     menuList.classList.toggle('visible');
-  }else {
-    setTimeout(function(){
+  } else {
+    setTimeout(function () {
       menuList.classList.toggle('visible');
     }, 500);
   }
-  
+
   changeBurgerMenuAnimation();
 };
 
@@ -77,6 +77,62 @@ returnToTopButton.addEventListener('click', function () {
 
 // adds space between the top of the window and the next section
 
+// const allAnchors = document.querySelectorAll('a');
+// console.log(allAnchors);
+
+// allAnchors.forEach((anchor) => {
+//   anchor.addEventListener('click', function (event) {
+//     console.log(anchor);
+//     event.preventDefault();
+//     const target = anchor.href;
+//     console.log(target);
+//     target.scrollIntoView({
+//       behavior: 'smooth'
+//     });
+
+//     document.querySelector(this.getAttribute('href')).scrollIntoView({
+// //           behavior: 'smooth'
+// //       });
+//   });
+// });
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+    // scrollIt(document.querySelector(this.getAttribute('href')));
+  });
+});
+
+// function scrollIt(element) {
+//   window.scrollTo({
+//     'behavior': 'smooth',
+//     'left': 0,
+//     'top': window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start))
+//   });
+// };
+
+
+  // const start = window.pageYOffset;
+  // const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+  // const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+  // const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
+  // const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+  
+
+
+  // console.log(element.getBoundingClientRect());
+  // console.log(element.offsetTop - element.scrollTop + element.clientTop);
+  // console.log(element.offsetTop);
+  // console.log(element.scrollTop);
+  // console.log(element.clientTop);
+
+
+
 // $('a').on('click', function (e) {
 //   e.preventDefault();
 //   var target = ($(this).attr('href'));
@@ -90,6 +146,8 @@ returnToTopButton.addEventListener('click', function () {
 // });
 
 
+
+
 // window.onload = function () {
 
 //   if (window.innerWidth <= 360) {
@@ -98,7 +156,6 @@ returnToTopButton.addEventListener('click', function () {
 //     mvp.setAttribute('content', 'width=360');
 //   }
 // }
-
 
 
 // animation code example with Jquery. For future use

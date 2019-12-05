@@ -87,8 +87,7 @@ window.onload = function () {
   if (window.innerWidth <= 360) {
 
     var mvp = document.getElementById('myViewport'); 
-    mvp.setAttribute('content', 'width=360');
-    console.log(mvp);
+    mvp.setAttribute('content', 'width=device-width');
   }
 }
 

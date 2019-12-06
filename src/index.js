@@ -10,6 +10,8 @@ const windowCurrentWidth = 900;
 // const headerHeight = "-8rem";
 const headerHeight = - homeHeader.offsetHeight + "px";
 const returnToTopButton = document.querySelector('#return-to-top');
+const allAnchors = document.querySelectorAll('a[href^="#"]');
+
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
@@ -73,89 +75,54 @@ returnToTopButton.addEventListener('click', function () {
   $('body,html').animate({
     scrollTop: 0
   }, 500);
+
+  // setTimeout(function () {
+  //   window.scrollTo(
+  //     {
+  //       top: 0,
+  //       left: 0,
+  //       behavior: 'smooth'
+  //     }
+  //   ), 1000
+  // });
 });
 
-// adds space between the top of the window and the next section
 
-// const allAnchors = document.querySelectorAll('a');
-// console.log(allAnchors);
+// Centers the section if it fits inside the screen, if not, sets it to start
+const jumpToSection = function () {
+  allAnchors.forEach(anchor => {
+    anchor.addEventListener('click', function (event) {
+      let currentTarget = document.querySelector(this.getAttribute('href'));
+      event.preventDefault();
 
-// allAnchors.forEach((anchor) => {
-//   anchor.addEventListener('click', function (event) {
-//     console.log(anchor);
-//     event.preventDefault();
-//     const target = anchor.href;
-//     console.log(target);
-//     target.scrollIntoView({
-//       behavior: 'smooth'
-//     });
+      let blockStyle;
+      if (currentTarget.clientHeight > document.documentElement.clientHeight) {
 
-//     document.querySelector(this.getAttribute('href')).scrollIntoView({
-// //           behavior: 'smooth'
-// //       });
-//   });
-// });
+        // const y = (currentTarget.getBoundingClientRect().top + window.pageYOffset) - (window.innerHeight / 2);
+        // setTimeout(function () {
+        //   window.scrollTo(
+        //     {
+        //       top: y,
+        //       left: 0,
+        //       behavior: 'smooth'
+        //     }
+        //   ), 100
+        // });
+        blockStyle = "start";
+      } else {
+        blockStyle = "center";
+      }
 
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (event) {
-    event.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+      currentTarget.scrollIntoView({
+        behavior: "smooth",
+        block: blockStyle,
+        inline: "start"
     });
-    // scrollIt(document.querySelector(this.getAttribute('href')));
   });
 });
+}
 
-// function scrollIt(element) {
-//   window.scrollTo({
-//     'behavior': 'smooth',
-//     'left': 0,
-//     'top': window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start))
-//   });
-// };
-
-
-  // const start = window.pageYOffset;
-  // const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-  // const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-  // const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
-  // const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
-  
-
-
-  // console.log(element.getBoundingClientRect());
-  // console.log(element.offsetTop - element.scrollTop + element.clientTop);
-  // console.log(element.offsetTop);
-  // console.log(element.scrollTop);
-  // console.log(element.clientTop);
-
-
-
-// $('a').on('click', function (e) {
-//   e.preventDefault();
-//   var target = ($(this).attr('href'));
-//     p = $(target).offset().top;
-//     offset = 50;
-//     console.log(target);
-//     console.log(p);
-
-//   $(target).hasClass('space') && (p = p - offset);
-//   $('body, html').animate({ 'scrollTop': p }, 100);
-// });
-
-
-
-
-// window.onload = function () {
-
-//   if (window.innerWidth <= 360) {
-
-//     var mvp = document.getElementById('myViewport'); 
-//     mvp.setAttribute('content', 'width=360');
-//   }
-// }
+jumpToSection();
 
 
 // animation code example with Jquery. For future use

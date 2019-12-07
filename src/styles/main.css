@@ -33,7 +33,7 @@ body {
   font-family: "Syncopate", sans-serif;
   display: block;
   position: absolute;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body::after {

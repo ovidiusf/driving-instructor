@@ -1,7 +1,7 @@
 #cursuriauto {
   @include layout;
   @include background-desktop;
-  margin-top: 200px;
+  margin-top: 500px;
   padding: 20px 60px 0px 60px;
 
   @include respond(tab-port) {

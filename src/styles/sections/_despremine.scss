@@ -2,7 +2,7 @@
 #despremine {
   @include layout;
   @include background-desktop-mirrored;
-  margin-top: 400px;
+  margin-top: 600px;
   padding: 20px 100px 0px 60px;
 
   @include respond(tab-port) {

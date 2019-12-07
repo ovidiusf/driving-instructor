@@ -4,10 +4,10 @@
   @include background-desktop;
 
   min-height: 456px;
-  top: 150px;
+  margin-top: 250px;
   padding: 20px;
   @include respond(phone){
-    top: 250px;
+    top: 300px;
   }
 
   .main-btn {

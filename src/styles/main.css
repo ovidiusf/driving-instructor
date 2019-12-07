@@ -855,7 +855,7 @@ a:hover {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 800px 50px 50px 800px;
   min-height: 456px;
-  top: 150px;
+  margin-top: 250px;
   padding: 20px;
 }
 
@@ -867,7 +867,7 @@ a:hover {
 
 @media (max-width: 37.5em) {
   #hero {
-    top: 250px;
+    top: 300px;
   }
 }
 
@@ -901,7 +901,7 @@ a:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px 800px 800px 50px;
-  margin-top: 400px;
+  margin-top: 600px;
   padding: 20px 100px 0px 60px;
 }
 
@@ -1043,7 +1043,7 @@ a:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 800px 50px 50px 800px;
-  margin-top: 200px;
+  margin-top: 500px;
   padding: 20px 60px 0px 60px;
 }
 
@@ -1201,7 +1201,7 @@ a:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  margin-top: 200px;
+  margin-top: 500px;
   padding: 20px 20px 20px 20px;
 }
 
@@ -1289,7 +1289,7 @@ a:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  margin-top: 200px;
+  margin-top: 400px;
   padding: 60px 60px 60px 60px;
 }
 
@@ -1443,7 +1443,7 @@ a:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  margin-top: 200px;
+  margin-top: 400px;
 }
 
 @media (max-width: 37.5em) {

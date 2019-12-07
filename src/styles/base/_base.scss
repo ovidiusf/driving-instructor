@@ -16,8 +16,9 @@ body {
 
 html,
 body {
-  max-width: 100%;
-  overflow-x: hidden;
+  @include respond(phone){
+    zoom: 70%;
+  }
 }
 
 // Set background image

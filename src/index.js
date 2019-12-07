@@ -1,3 +1,5 @@
+// import * as Variables from "./variables.js";
+
 // Defining variables
 const menuList = document.querySelector('#menu-list');
 const mainNav = document.querySelector('#main-nav');
@@ -13,7 +15,6 @@ const headerHeight = - homeHeader.offsetHeight + "px";
 const returnToTopButton = document.querySelector('#return-to-top');
 const allAnchors = document.querySelectorAll('a[href^="#"]');
 const mainSection = document.querySelector('#main-section');
-console.log(mainSection);
 
 
 // changes behaviour of the navigation bar when mobile

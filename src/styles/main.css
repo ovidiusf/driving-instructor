@@ -68,7 +68,7 @@ a:active {
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 100px;
   text-align: center;
   margin-bottom: 20px;
@@ -79,18 +79,25 @@ h1 {
           animation-delay: 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+  font-family: "Syncopate", sans-serif;
+}
+
+@media (max-width: 56.25em) {
+  h1 {
+    font-size: 70px;
+  }
 }
 
 @media (max-width: 37.5em) {
   h1 {
-    font-size: 85px;
+    font-size: 65px;
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 20em) {
   h1 {
-    font-size: 80px;
+    font-size: 65px;
   }
 }
 
@@ -110,8 +117,9 @@ h2 {
 h3 {
   text-align: right;
   font-size: 40px;
-  font-style: italic;
+  font-weight: 400;
   margin-left: auto;
+  font-family: "Syncopate", sans-serif;
 }
 
 @media (max-width: 37.5em) {
@@ -241,9 +249,6 @@ a:hover {
   height: 8rem;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
-  border-bottom: 3px solid #336F8D;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -252,6 +257,7 @@ a:hover {
   #home-header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    border-bottom: 4px solid #336F8D;
   }
 }
 
@@ -366,6 +372,12 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 56.25em) {
+  #home-header #main-nav .menu-list li {
+    border-bottom: 2px solid #336F8D;
+  }
 }
 
 @-webkit-keyframes animate-dropdown-list {

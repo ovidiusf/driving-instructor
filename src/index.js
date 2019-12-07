@@ -3,6 +3,7 @@ const menuList = document.querySelector('#menu-list');
 const mainNav = document.querySelector('#main-nav');
 const burgerMenuToggle = document.querySelector('#burger-toggle');
 const homeHeader = document.querySelector('#home-header');
+const $menu = $('#home-header');
 const burgerMenuStickComponents = document.getElementsByClassName('stick');
 const listItemsNav = document.querySelectorAll("#main-nav > ul > li");
 let prevScrollpos = window.pageYOffset;
@@ -16,6 +17,8 @@ const allAnchors = document.querySelectorAll('a[href^="#"]');
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
   menuShowHide();
+  changeBurgerMenuAnimation();
+  burgerMenuToggle.classList.toggle('active');
 });
 
 
@@ -25,15 +28,37 @@ const menuShowHide = () => {
   menuList.classList.toggle('active');
   menuList.style.display = 'flex';
 
-  if (!menuList.classList.contains('visible')) {
-    menuList.classList.toggle('visible');
+  if (menuList.style.visibility !== "visible") {
+    menuList.style.visibility = "visible";
   } else {
     setTimeout(function () {
-      menuList.classList.toggle('visible');
+      menuList.style.visibility = "hidden";
     }, 500);
   }
-  changeBurgerMenuAnimation();
 };
+
+const clickOutsideCloseMenu = () => {
+
+  homeHeader.classList.toggle('active');
+
+  menuList.classList.toggle('active');
+
+  setTimeout(function () {
+    menuList.style.visibility = "hidden";
+  }, 500);
+}
+
+
+
+
+$(document).mouseup(e => {
+  if (!$menu.is(e.target) // if the target of the click isn't the container...
+    && $menu.has(e.target).length === 0 && homeHeader.classList.contains('active')) // ... nor a descendant of the container
+  {
+    clickOutsideCloseMenu();
+    changeBurgerMenuAnimation();
+  }
+});
 
 // changes animation of the burger menu
 const changeBurgerMenuAnimation = () => {
@@ -60,17 +85,18 @@ window.onscroll = function () {
 }
 
 // hide menu links after click
-mainNav.addEventListener('click', function () {
+menuList.addEventListener('click', function () {
   listItemsNav.forEach(() => {
     if (window.innerWidth < windowCurrentWidth) {
       menuShowHide();
+      changeBurgerMenuAnimation();
     }
   })
 });
 
 // hides menu if clicked outside main element
 
-// document.ready
+
 
 // Back to top function, when arrow is clicked.
 

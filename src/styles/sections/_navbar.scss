@@ -16,10 +16,12 @@
   backdrop-filter: blur(5px);
   transition: top 0.3s;
   border-bottom: 3px solid $stroke-color;
+  transition: all 0.5s ease;
   @include respond(tab-port) {
     justify-content: space-around;
   }
   &.active {
+    transition: all 0.5s ease;
     background: $primary-color-solid;
   }
 
@@ -47,18 +49,14 @@
     flex-direction: row;
     justify-content: center;
     justify-items: center;
-    line-height: 2rem;
-    @include respond(tab-port){
-      visibility: hidden;
-    }
-
-    .visible {
-      @include respond(tab-port) {
-        visibility: visible;
-      }
-    }
+    
+    // @include respond(tab-port){
+    //   visibility: hidden;
+    //   // direction: none;
+    // }
 
     .menu-list {
+      line-height: 2rem;
       list-style-type: none;
       display: flex;
       flex-direction: row;
@@ -66,7 +64,8 @@
       justify-content: center;
       justify-items: center;
       @include respond(tab-port) {
-        display: flex;
+        visibility: hidden;
+        display: none;
         animation: animate-dropdown-pull 0.5s;
         animation-fill-mode: both;
         flex-direction: column;
@@ -78,6 +77,12 @@
         background: $primary-color-solid;
         font-size: 20px;
         line-height: 2;
+      }
+
+      &.active {
+        animation: animate-dropdown-list 0.5s;
+        animation-direction: alternate;
+        animation-fill-mode: both;
       }
 
       li {
@@ -94,7 +99,6 @@
       animation: animate-dropdown-list 0.5s;
       animation-direction: alternate;
       animation-fill-mode: both;
-      // visibility: visible;
     }
   }
 }

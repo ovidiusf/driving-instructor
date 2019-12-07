@@ -244,6 +244,8 @@ a:hover {
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
   border-bottom: 3px solid #336F8D;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 56.25em) {
@@ -254,6 +256,8 @@ a:hover {
 }
 
 #home-header.active {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   background: rgba(101, 157, 189, 0.95);
 }
 
@@ -296,22 +300,10 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  line-height: 2rem;
-}
-
-@media (max-width: 56.25em) {
-  #home-header #main-nav {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 56.25em) {
-  #home-header #main-nav .visible {
-    visibility: visible;
-  }
 }
 
 #home-header #main-nav .menu-list {
+  line-height: 2rem;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,9 +321,8 @@ a:hover {
 
 @media (max-width: 56.25em) {
   #home-header #main-nav .menu-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    visibility: hidden;
+    display: none;
     -webkit-animation: animate-dropdown-pull 0.5s;
             animation: animate-dropdown-pull 0.5s;
     -webkit-animation-fill-mode: both;
@@ -349,6 +340,15 @@ a:hover {
     font-size: 20px;
     line-height: 2;
   }
+}
+
+#home-header #main-nav .menu-list.active {
+  -webkit-animation: animate-dropdown-list 0.5s;
+          animation: animate-dropdown-list 0.5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 #home-header #main-nav .menu-list li {

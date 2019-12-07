@@ -22,6 +22,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  width: 100vw;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -36,7 +37,7 @@ body {
 @media (max-width: 37.5em) {
   html,
   body {
-    zoom: 90%;
+    zoom: 80%;
   }
 }
 
@@ -488,6 +489,7 @@ a:hover {
   height: 80px;
   position: relative;
   display: none;
+  visibility: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -506,6 +508,7 @@ a:hover {
 
 @media (max-width: 56.25em) {
   .burger-menu {
+    visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -865,9 +868,15 @@ a:hover {
   }
 }
 
+@media (max-width: 56.25em) {
+  #hero {
+    margin-top: 350px;
+  }
+}
+
 @media (max-width: 37.5em) {
   #hero {
-    top: 300px;
+    margin-top: 400px;
   }
 }
 
@@ -921,7 +930,7 @@ a:hover {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px 100px 100px 50px;
-    height: 1000px;
+    height: 800px;
     padding: 20px;
   }
 }
@@ -934,7 +943,7 @@ a:hover {
 
 @media (max-width: 20em) {
   #despremine {
-    height: 1200px;
+    height: 800px;
   }
 }
 
@@ -1107,13 +1116,13 @@ a:hover {
 
 @media (max-width: 37.5em) {
   #cursuriauto .cursuriauto-btn {
-    margin: 5px;
+    margin: 8px;
   }
 }
 
 @media (max-width: 20em) {
   #cursuriauto .cursuriauto-btn {
-    margin: 2px;
+    margin: 8px;
   }
 }
 

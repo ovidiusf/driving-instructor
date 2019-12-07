@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   // height: 100vh;
-  // width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -17,7 +17,7 @@ body {
 html,
 body {
   @include respond(phone){
-    zoom: 90%;
+    zoom: 80%;
   }
 }
 

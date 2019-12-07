@@ -162,6 +162,7 @@
   height: 80px;
   position: relative;
   display: none;
+  visibility: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -171,6 +172,7 @@
   cursor: pointer;
 
   @include respond(tab-port) {
+    visibility: visible;
     display: flex;
   }
 

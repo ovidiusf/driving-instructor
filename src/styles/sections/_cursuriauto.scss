@@ -30,10 +30,10 @@
   .cursuriauto-btn {
     margin: 20px;
     @include respond(phone){
-      margin: 5px;
+      margin: 8px;
     }
     @include respond(phone-xs){
-      margin: 2px;
+      margin: 8px;
     }
   }
 }

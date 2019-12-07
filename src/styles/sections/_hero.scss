@@ -6,8 +6,11 @@
   min-height: 456px;
   margin-top: 250px;
   padding: 20px;
+  @include respond(tab-port){
+    margin-top: 350px;
+  }
   @include respond(phone){
-    top: 300px;
+    margin-top: 400px;
   }
 
   .main-btn {

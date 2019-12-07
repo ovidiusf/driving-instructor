@@ -17,6 +17,8 @@ const allAnchors = document.querySelectorAll('a[href^="#"]');
 const mainSection = document.querySelector('#main-section');
 const nameMobile = document.querySelector('.name-mobile');
 
+const body = document.querySelector('body');
+body.style.width = window.innerWidth;
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {

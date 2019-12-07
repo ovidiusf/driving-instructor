@@ -28,16 +28,16 @@ html {
   min-width: 100vw;
 }
 
-@media (max-width: 37.5em) {
-  html {
-    min-width: 99vw;
-  }
-}
-
 body {
   font-family: "Syncopate", sans-serif;
   display: block;
   position: absolute;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 

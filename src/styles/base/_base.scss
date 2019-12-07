@@ -5,9 +5,6 @@ html {
   width: 100vw;
   min-height: 100vh;
   min-width: 100vw;
-  @include respond(phone){
-    min-width: 99vw;
-  }
 }
 
 body {
@@ -19,9 +16,8 @@ body {
 
 html,
 body {
-  @include respond(phone){
-    // zoom: 70%;
-  }
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 // Set background image

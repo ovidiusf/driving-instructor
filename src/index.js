@@ -17,11 +17,11 @@ const allAnchors = document.querySelectorAll('a[href^="#"]');
 const mainSection = document.querySelector('#main-section');
 const nameMobile = document.querySelector('.name-mobile');
 
+
+// sets the body to the dimension of the devices' inner width
 window.onload = function () {
   $('body').css('width', 'window.innerWidth');
 };
-
-
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
@@ -47,6 +47,7 @@ const menuShowHide = () => {
   nameMobile.classList.toggle('active');
 };
 
+// disables the menu and the menu icon when clicking outside the menu list
 const clickOutsideCloseMenu = () => {
 
   homeHeader.classList.toggle('active');

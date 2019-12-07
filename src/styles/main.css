@@ -77,8 +77,8 @@ h1 {
           animation-duration: 3s;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 @media (max-width: 37.5em) {
@@ -243,13 +243,13 @@ a:hover {
           backdrop-filter: blur(5px);
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
+  border-bottom: 3px solid #336F8D;
 }
 
 @media (max-width: 56.25em) {
   #home-header {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -257,18 +257,31 @@ a:hover {
   background: rgba(101, 157, 189, 0.95);
 }
 
-#home-header #burger-toggle {
-  right: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#home-header .name-mobile {
+  visibility: hidden;
+  display: none;
 }
 
-@media (max-width: 37.5em) {
-  #home-header #burger-toggle {
-    top: 8px;
-    right: 25px;
+@media (max-width: 56.25em) {
+  #home-header .name-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+
+#home-header .name-mobile p {
+  font-size: 3rem;
 }
 
 #home-header #main-nav {
@@ -449,13 +462,20 @@ a:hover {
   .home-icon #home-image {
     width: 60px;
     height: 58px;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  .home-icon #home-image:hover {
+    -webkit-transition: unset;
+    transition: unset;
+    margin-right: 0px;
   }
 }
 
 .burger-menu {
   width: 80px;
   height: 80px;
-  position: absolute;
+  position: relative;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -467,7 +487,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 1px;
+  top: 8px;
   right: 15px;
   bottom: 2px;
   cursor: pointer;

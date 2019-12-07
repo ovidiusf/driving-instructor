@@ -32,7 +32,6 @@ const menuShowHide = () => {
       menuList.classList.toggle('visible');
     }, 500);
   }
-
   changeBurgerMenuAnimation();
 };
 
@@ -69,6 +68,10 @@ mainNav.addEventListener('click', function () {
   })
 });
 
+// hides menu if clicked outside main element
+
+// document.ready
+
 // Back to top function, when arrow is clicked.
 
 returnToTopButton.addEventListener('click', function () {
@@ -97,17 +100,6 @@ const jumpToSection = function () {
 
       let blockStyle;
       if (currentTarget.clientHeight > document.documentElement.clientHeight) {
-
-        // const y = (currentTarget.getBoundingClientRect().top + window.pageYOffset) - (window.innerHeight / 2);
-        // setTimeout(function () {
-        //   window.scrollTo(
-        //     {
-        //       top: y,
-        //       left: 0,
-        //       behavior: 'smooth'
-        //     }
-        //   ), 100
-        // });
         blockStyle = "start";
       } else {
         blockStyle = "center";
@@ -117,9 +109,9 @@ const jumpToSection = function () {
         behavior: "smooth",
         block: blockStyle,
         inline: "start"
+      });
     });
   });
-});
 }
 
 jumpToSection();

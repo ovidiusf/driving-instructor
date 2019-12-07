@@ -6,7 +6,7 @@ h1 {
   color: $secondary-color;
   animation-duration: 3s;
   animation-delay: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
   @include respond(phone) {
     // font-size: $big-font-size;
     font-size: 85px;

@@ -26,19 +26,13 @@ html {
   width: 100vw;
   min-height: 100vh;
   min-width: 100vw;
+  max-width: 100%;
 }
 
 body {
   font-family: "Syncopate", sans-serif;
   display: block;
   position: absolute;
-  overflow-x: hidden;
-}
-
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 body::after {
@@ -484,7 +478,18 @@ a:hover {
   }
 }
 
-.burger-menu {
+.burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.burger-container .burger-menu {
+  top: 15px;
   width: 80px;
   height: 80px;
   position: relative;
@@ -500,22 +505,23 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 5px;
   right: 15px;
-  bottom: 5px;
+  bottom: 20px;
   cursor: pointer;
 }
 
 @media (max-width: 56.25em) {
-  .burger-menu {
+  .burger-container .burger-menu {
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 5px;
+    bottom: 5px;
   }
 }
 
-.burger-menu .stick {
+.burger-container .burger-menu .stick {
   width: 80px;
   height: 8px;
   border-radius: 5px;
@@ -524,21 +530,21 @@ a:hover {
   display: inline-block;
 }
 
-.burger-menu .stick:last-child {
+.burger-container .burger-menu .stick:last-child {
   margin-bottom: 0px;
 }
 
-.burger-menu .stick-1.open {
+.burger-container .burger-menu .stick-1.open {
   -webkit-animation: stick-1-open 0.6s ease-out forwards;
           animation: stick-1-open 0.6s ease-out forwards;
 }
 
-.burger-menu .stick-2.open {
+.burger-container .burger-menu .stick-2.open {
   -webkit-animation: stick-2-open 0.6s linear forwards;
           animation: stick-2-open 0.6s linear forwards;
 }
 
-.burger-menu .stick-3.open {
+.burger-container .burger-menu .stick-3.open {
   -webkit-animation: stick-3-open 0.6s linear forwards;
           animation: stick-3-open 0.6s linear forwards;
 }
@@ -659,7 +665,7 @@ a:hover {
   }
 }
 
-.burger-menu .stick-1.close {
+.burger-container .burger-menu .stick-1.close {
   width: 8px;
   -webkit-transform: translate(27px, 26px);
           transform: translate(27px, 26px);
@@ -667,14 +673,14 @@ a:hover {
           animation: stick-1-close 0.6s ease-out forwards;
 }
 
-.burger-menu .stick-2.close {
+.burger-container .burger-menu .stick-2.close {
   -webkit-transform: translate(0px, 0px) rotate(40deg);
           transform: translate(0px, 0px) rotate(40deg);
   -webkit-animation: stick-2-close 0.6s ease-out forwards;
           animation: stick-2-close 0.6s ease-out forwards;
 }
 
-.burger-menu .stick-3.close {
+.burger-container .burger-menu .stick-3.close {
   -webkit-transform: translate(0px, -23px) rotate(-40deg);
           transform: translate(0px, -23px) rotate(-40deg);
   -webkit-animation: stick-3-close 0.6s ease-out forwards;

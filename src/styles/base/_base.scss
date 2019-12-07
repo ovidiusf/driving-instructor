@@ -5,19 +5,19 @@ html {
   width: 100vw;
   min-height: 100vh;
   min-width: 100vw;
+  max-width: 100%;
 }
 
 body {
   font-family: $syncopate-font-family;
   display: block;
   position: absolute;
-  overflow-x: hidden;
 }
 
 html,
 body {
   @include respond(phone){
-    zoom: 70%;
+    // zoom: 70%;
   }
 }
 

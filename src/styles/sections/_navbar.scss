@@ -49,11 +49,6 @@
     flex-direction: row;
     justify-content: center;
     justify-items: center;
-    
-    // @include respond(tab-port){
-    //   visibility: hidden;
-    //   // direction: none;
-    // }
 
     .menu-list {
       line-height: 2rem;
@@ -80,6 +75,7 @@
       }
 
       &.active {
+        display: flex;
         animation: animate-dropdown-list 0.5s;
         animation-direction: alternate;
         animation-fill-mode: both;
@@ -94,33 +90,33 @@
       }
     }
 
-    .active {
-      display: flex;
-      animation: animate-dropdown-list 0.5s;
-      animation-direction: alternate;
-      animation-fill-mode: both;
-    }
+    // .active {
+    //   display: flex;
+    //   animation: animate-dropdown-list 0.5s;
+    //   animation-direction: alternate;
+    //   animation-fill-mode: both;
+    // }
   }
 }
 
 @keyframes animate-dropdown-list {
   from {
-    transform: scale(0.7);
+    transform: translateX(600px);
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform:  translateX(0px);
     opacity: 1;
   }
 }
 
 @keyframes animate-dropdown-pull {
   from {
-    transform: scale(1);
+    transform: translateX(0px);
     opacity: 1;
   }
   to {
-    transform: scale(0.5);
+    transform: translateX(600px);
     opacity: 0;
   }
 }
@@ -138,8 +134,7 @@
     transition: all 0.5s ease;
     &:hover {
       margin-right: 5px;
-      transition: all 0.5s ease;
-      
+      transition: all 0.5s ease;  
     }
     @include respond(tab-port) {
       width: 60px;

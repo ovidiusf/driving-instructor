@@ -3,4 +3,30 @@
   min-width: 100%;
   padding-left: 4%;
   padding-right: 4%;
+  animation: animate-background-fadein 0.5s;
+    animation-fill-mode: both;
+  &.active {
+    animation: animate-background-fadeout 0.5s;
+    animation-fill-mode: both;
+  }
+}
+
+
+
+@keyframes animate-background-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-background-fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

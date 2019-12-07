@@ -12,13 +12,14 @@ const windowCurrentWidth = 900;
 const headerHeight = - homeHeader.offsetHeight + "px";
 const returnToTopButton = document.querySelector('#return-to-top');
 const allAnchors = document.querySelectorAll('a[href^="#"]');
+const mainSection = document.querySelector('#main-section');
+console.log(mainSection);
 
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
   menuShowHide();
   changeBurgerMenuAnimation();
-  burgerMenuToggle.classList.toggle('active');
 });
 
 
@@ -35,6 +36,7 @@ const menuShowHide = () => {
       menuList.style.visibility = "hidden";
     }, 500);
   }
+  mainSection.classList.toggle('active');
 };
 
 const clickOutsideCloseMenu = () => {
@@ -46,6 +48,7 @@ const clickOutsideCloseMenu = () => {
   setTimeout(function () {
     menuList.style.visibility = "hidden";
   }, 500);
+  mainSection.classList.toggle('active');
 }
 
 

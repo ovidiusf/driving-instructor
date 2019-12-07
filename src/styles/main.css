@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: "Franklin Gothic Book", sans-serif;
+  font-family: "Syncopate", sans-serif;
   display: block;
   position: absolute;
   overflow-x: hidden;
@@ -79,7 +79,6 @@ h1 {
           animation-delay: 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  font-family: "Syncopate", sans-serif;
 }
 
 @media (max-width: 56.25em) {
@@ -116,15 +115,14 @@ h2 {
 
 h3 {
   text-align: right;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400;
   margin-left: auto;
-  font-family: "Syncopate", sans-serif;
 }
 
 @media (max-width: 37.5em) {
   h3 {
-    font-size: 3rem;
+    font-size: 30px;
   }
 }
 
@@ -141,7 +139,6 @@ h4 {
 
 p,
 a {
-  font-family: "Franklin Gothic Book";
   font-size: 2em;
 }
 
@@ -255,8 +252,9 @@ a:hover {
 
 @media (max-width: 56.25em) {
   #home-header {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-bottom: 4px solid #336F8D;
   }
 }
@@ -265,19 +263,19 @@ a:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: rgba(101, 157, 189, 0.95);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #home-header .name-mobile {
   visibility: hidden;
   display: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 56.25em) {
   #home-header .name-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -290,8 +288,18 @@ a:hover {
   }
 }
 
-#home-header .name-mobile p {
+#home-header .name-mobile .name-mobile-p {
   font-size: 3rem;
+  font-style: "Syncopate", sans-serif;
+}
+
+#home-header .name-mobile.active {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
 }
 
 #home-header #main-nav {
@@ -490,9 +498,9 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 8px;
+  top: 5px;
   right: 15px;
-  bottom: 2px;
+  bottom: 5px;
   cursor: pointer;
 }
 
@@ -1127,6 +1135,10 @@ a:hover {
           animation-fill-mode: both;
 }
 
+#main-section p {
+  font-family: "Franklin Gothic Book";
+}
+
 @-webkit-keyframes animate-background-fadein {
   from {
     opacity: 0;
@@ -1642,6 +1654,7 @@ footer .footer-container {
 
 footer .footer-container p {
   margin-top: 40px;
+  font-family: "Franklin Gothic Book";
 }
 
 @media (max-width: 37.5em) {

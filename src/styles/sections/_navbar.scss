@@ -16,12 +16,13 @@
   backdrop-filter: blur(5px);
   transition: all 0.5s ease;
   @include respond(tab-port) {
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 4px solid $stroke-color;
   }
   &.active {
     transition: all 0.5s ease;
     background: $primary-color-solid;
+    justify-content: space-around;
   }
 
  
@@ -30,15 +31,20 @@
   .name-mobile{
     visibility: hidden;
     display: none;
+    transition: all 0.5s ease;
     @include respond(tab-port){
-      display: flex;
-      visibility: visible;
       flex-grow: 1;
       justify-content: center;
       align-items: center;
     }
-    p {
+    .name-mobile-p {
       font-size: $mid-font-size;
+      font-style: $syncopate-font-family;
+    }
+    &.active {
+      transition: all 0.5s ease;
+      display: flex;
+      visibility: visible;
     }
   }
 
@@ -159,9 +165,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  top: 8px;
+  top: 5px;
   right: 15px;
-  bottom: 2px;
+  bottom: 5px;
   cursor: pointer;
 
   @include respond(tab-port) {

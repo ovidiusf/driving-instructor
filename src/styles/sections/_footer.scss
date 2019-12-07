@@ -21,6 +21,7 @@ footer {
     text-align: center;
     p {
       margin-top: 40px;
+      font-family: $default-font-family;
       @include respond(phone){
           font-size: 18px;
       }

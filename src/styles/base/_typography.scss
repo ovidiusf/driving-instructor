@@ -7,7 +7,7 @@ h1 {
   animation-duration: 3s;
   animation-delay: 2s;
   animation-iteration-count: 1;
-  font-family: $syncopate-font-family;
+  // font-family: $syncopate-font-family;
   @include respond(tab-port){
     font-size: 70px;
   }
@@ -25,7 +25,6 @@ h2 {
   text-align: center;
   font-size: 60px;
   color: $secondary-color;
-
   margin: 10px;
   @include respond(phone) {
     font-size: $title-font-size;
@@ -34,13 +33,11 @@ h2 {
 
 h3 {
   text-align: right;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400;
-  // font-style: italic;
   margin-left: auto;
-  font-family: $syncopate-font-family;
   @include respond(phone) {
-    font-size: $mid-font-size;
+    font-size: 30px;
   }
 }
 h4 {
@@ -53,7 +50,6 @@ h4 {
 
 p,
 a {
-  font-family: $default-font-family;
   font-size: $default-font-size;
 }
 

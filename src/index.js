@@ -15,6 +15,7 @@ const headerHeight = - homeHeader.offsetHeight + "px";
 const returnToTopButton = document.querySelector('#return-to-top');
 const allAnchors = document.querySelectorAll('a[href^="#"]');
 const mainSection = document.querySelector('#main-section');
+const nameMobile = document.querySelector('.name-mobile');
 
 
 // changes behaviour of the navigation bar when mobile
@@ -38,6 +39,7 @@ const menuShowHide = () => {
     }, 500);
   }
   mainSection.classList.toggle('active');
+  nameMobile.classList.toggle('active');
 };
 
 const clickOutsideCloseMenu = () => {
@@ -50,10 +52,8 @@ const clickOutsideCloseMenu = () => {
     menuList.style.visibility = "hidden";
   }, 500);
   mainSection.classList.toggle('active');
+  nameMobile.classList.toggle('active');
 }
-
-
-
 
 $(document).mouseup(e => {
   if (!$menu.is(e.target) // if the target of the click isn't the container...

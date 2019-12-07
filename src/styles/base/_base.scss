@@ -17,7 +17,7 @@ body {
 html,
 body {
   @include respond(phone){
-    zoom: 86%;
+    zoom: 80%;
   }
 }
 

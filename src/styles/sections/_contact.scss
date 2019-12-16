@@ -2,6 +2,7 @@
   @include layout;
   @include background-others;
   margin-top: 400px;
+  font-size: 16px;
 
   .form-email-container {
     .form-email {
@@ -42,8 +43,7 @@
     .fb-page {
       display: flex;
       justify-content: center;
-      flex-direction: row;
-      
+      flex-direction: row;    
     }
   }
 
@@ -78,12 +78,15 @@
       }
       h4 {
         text-align: center;
-        font-size: 35px;
-        @include respond(tab-port) {
-          font-size: 25px;
+        font-size: 2.6rem;
+        @include respond(tab-land) {
+          font-size: $default-font-size;
+        }
+        @include respond(tab-port){
+          font-size: 1.6rem;
         }
         @include respond(phone) {
-          font-size: 15px;
+          font-size: 1.5rem;
         }
       }
     }

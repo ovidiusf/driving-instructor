@@ -42,7 +42,6 @@
     flex-direction: column;
     margin: 10px;
     text-align: justify;
-    // min-width: 200px;
     @include respond(tab-port) {
       margin: 0px;
     }
@@ -51,6 +50,8 @@
   .despremine-btn {
     display: flex;
     justify-content: center;
+    align-content: center;
+    text-align: center;
     margin: 10px;
   }
 

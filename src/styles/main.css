@@ -107,7 +107,7 @@ h2 {
   margin: 10px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   h2 {
     font-size: 5.5rem;
   }
@@ -128,18 +128,18 @@ h3 {
 
 h4 {
   text-align: left;
-  font-size: 40px;
+  font-size: 2.8rem;
 }
 
 @media (max-width: 37.5em) {
   h4 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
 p,
 a {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 a {
@@ -165,10 +165,9 @@ a:hover {
 }
 
 .btn {
-  font-size: 100%;
   display: inline-block;
-  margin: 0;
-  padding: 0.75rem 1.25rem;
+  margin: 0 auto;
+  padding: 1.25rem;
   border-radius: 10rem;
   text-transform: uppercase;
   font-size: 3rem;
@@ -178,13 +177,15 @@ a:hover {
   position: relative;
   overflow: hidden;
   z-index: 0;
+  text-align: center;
+  line-height: 40px;
+  height: 60px;
   cursor: pointer;
 }
 
 @media (max-width: 37.5em) {
   .btn {
-    text-align: center;
-    padding: 0.6rem 1.1rem;
+    padding: 1.1rem 1.1rem;
     font-size: 2.8rem;
   }
 }
@@ -289,7 +290,7 @@ a:hover {
 }
 
 #home-header .name-mobile .name-mobile-p {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-style: "Syncopate", sans-serif;
 }
 
@@ -1029,6 +1030,9 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
   margin: 10px;
 }
 
@@ -1109,7 +1113,7 @@ a:hover {
           flex-direction: row;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   #cursuriauto .cursuriauto-btn-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1123,6 +1127,12 @@ a:hover {
 
 #cursuriauto .cursuriauto-btn {
   margin: 20px;
+}
+
+@media (max-width: 56.25em) {
+  #cursuriauto .cursuriauto-btn {
+    margin: 10px;
+  }
 }
 
 @media (max-width: 37.5em) {
@@ -1464,6 +1474,7 @@ a:hover {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   margin-top: 400px;
+  font-size: 16px;
 }
 
 @media (max-width: 37.5em) {
@@ -1637,18 +1648,24 @@ a:hover {
 
 #contact .contact-email-container .email-text h4 {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.6rem;
+}
+
+@media (max-width: 75em) {
+  #contact .contact-email-container .email-text h4 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 56.25em) {
   #contact .contact-email-container .email-text h4 {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 37.5em) {
   #contact .contact-email-container .email-text h4 {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 

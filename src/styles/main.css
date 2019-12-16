@@ -1522,6 +1522,9 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 37.5em) {
@@ -1562,12 +1565,28 @@ a:hover {
   height: 125px;
   width: 125px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 37.5em) {
   #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img {
     height: 75px;
     width: 75px;
+  }
+}
+
+#contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img:hover {
+  width: 150px;
+  height: 150px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 37.5em) {
+  #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img:hover {
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -1582,6 +1601,14 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-radius: 200px;
+}
+
+@media (max-width: 56.25em) {
+  #contact .contact-facebook-container .fb-page {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 #contact .contact-email-container {
@@ -1633,6 +1660,17 @@ a:hover {
 
 #contact .contact-email-container .contact-email-icon .contact-email-icon-img {
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 75px;
+  height: 75px;
+}
+
+#contact .contact-email-container .contact-email-icon .contact-email-icon-img:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 85px;
+  width: 85px;
 }
 
 #contact .contact-email-container .email-text {

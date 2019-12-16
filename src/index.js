@@ -48,6 +48,7 @@ const menuShowHide = () => {
 };
 
 // disables the menu and the menu icon when clicking outside the menu list
+// hides menu if clicked outside main element
 const clickOutsideCloseMenu = () => {
 
   homeHeader.classList.toggle('active');
@@ -103,10 +104,6 @@ menuList.addEventListener('click', function () {
     }
   })
 });
-
-// hides menu if clicked outside main element
-
-
 
 // Back to top function, when arrow is clicked.
 

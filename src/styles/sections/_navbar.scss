@@ -1,6 +1,6 @@
 // HEADER STYLES
 
-// PARENT HEADER 
+// PARENT HEADER
 #home-header {
   display: flex;
   justify-content: center;
@@ -25,14 +25,13 @@
     justify-content: space-around;
   }
 
- 
   // Middle Nav Area
 
-  .name-mobile{
+  .name-mobile {
     visibility: hidden;
     display: none;
     transition: all 0.5s ease;
-    @include respond(tab-port){
+    @include respond(tab-port) {
       flex-grow: 1;
       justify-content: center;
       align-items: center;
@@ -96,6 +95,13 @@
           border-bottom: 2px solid $stroke-color;
         }
       }
+
+      a {
+        @include respond(tab-port) {
+          font-size: 30px;
+          margin: 5px;
+        }
+      }
     }
 
     // .active {
@@ -113,7 +119,7 @@
     opacity: 0;
   }
   to {
-    transform:  translateX(0px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
@@ -142,7 +148,7 @@
     transition: all 0.5s ease;
     &:hover {
       margin-right: 5px;
-      transition: all 0.5s ease;  
+      transition: all 0.5s ease;
     }
     @include respond(tab-port) {
       width: 60px;
@@ -161,9 +167,20 @@
   display: flex;
   justify-content: center;
   position: relative;
-  
-  .burger-menu {
+  @include respond(tab-port) {
+    height: 80px;
+    width: 80px;
+    right: 15px;
+    top: 5px;
+    bottom: 10px;
+  }
+  @include respond(phone){
     top: 15px;
+    right: 20px;
+    bottom: 2px;
+  }
+  .burger-menu {
+    // top: 15px;
     width: 80px;
     height: 80px;
     position: relative;
@@ -172,30 +189,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    right: 15px;
-    bottom: 20px;
     cursor: pointer;
-  
+
     @include respond(tab-port) {
       visibility: visible;
       display: flex;
-      top: 5px;
-      bottom: 5px;
     }
-    @include respond(phone){
-      // top: 5px;
-      // bottom: 5px;
-    }
-  
+
     .stick {
       width: 80px;
-      height: 8px;
+      height: 8.1px;
       border-radius: 5px;
       margin-bottom: 15px;
       background-color: #000;
       display: inline-block;
       &:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 15px;
       }
     }
     .stick-1.open {
@@ -207,7 +216,7 @@
     .stick-3.open {
       animation: stick-3-open 0.6s linear forwards;
     }
-  
+
     @keyframes stick-1-open {
       0% {
         width: 80px;
@@ -233,7 +242,7 @@
         transform: translate(35px, 46px);
       }
     }
-  
+
     @keyframes stick-2-open {
       80% {
         background-color: #2dfdb9;
@@ -244,7 +253,7 @@
         transform: translate(8px, 0px) rotate(40deg);
       }
     }
-  
+
     @keyframes stick-3-open {
       80% {
         background-color: #2dfdb9;
@@ -255,23 +264,23 @@
         transform: translate(8px, -23px) rotate(-40deg);
       }
     }
-  
+
     .stick-1.close {
       width: 8px;
       transform: translate(27px, 26px);
       animation: stick-1-close 0.6s ease-out forwards;
     }
-  
+
     .stick-2.close {
       transform: translate(0px, 0px) rotate(40deg);
       animation: stick-2-close 0.6s ease-out forwards;
     }
-  
+
     .stick-3.close {
       transform: translate(0px, -23px) rotate(-40deg);
       animation: stick-3-close 0.6s ease-out forwards;
     }
-  
+
     @keyframes stick-1-close {
       0% {
         width: 0px;
@@ -284,7 +293,7 @@
         transform: translate(0, 0);
       }
     }
-  
+
     @keyframes stick-2-close {
       0% {
         background-color: #ff1456;
@@ -311,7 +320,7 @@
         transform: translate(0, 0px);
       }
     }
-  
+
     @keyframes stick-3-close {
       0% {
         background-color: #ff1456;
@@ -338,6 +347,4 @@
       }
     }
   }
-
 }
-

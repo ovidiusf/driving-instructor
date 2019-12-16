@@ -6,12 +6,6 @@ footer {
   margin-top: 100px;
   height: 150px;
   box-sizing: border-box;
-  @include respond(tab-port){
-      // min-width: 600px;
-  }
-  @include respond(phone-xs){
-    // min-width: 350px;
-  }
   .footer-container {
     width: 100%;
     padding-right: 15px;

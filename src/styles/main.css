@@ -389,6 +389,13 @@ a:hover {
   }
 }
 
+@media (max-width: 56.25em) {
+  #home-header #main-nav .menu-list a {
+    font-size: 30px;
+    margin: 5px;
+  }
+}
+
 @-webkit-keyframes animate-dropdown-list {
   from {
     -webkit-transform: translateX(600px);
@@ -494,8 +501,25 @@ a:hover {
   position: relative;
 }
 
+@media (max-width: 56.25em) {
+  .burger-container {
+    height: 80px;
+    width: 80px;
+    right: 15px;
+    top: 5px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .burger-container {
+    top: 15px;
+    right: 20px;
+    bottom: 2px;
+  }
+}
+
 .burger-container .burger-menu {
-  top: 15px;
   width: 80px;
   height: 80px;
   position: relative;
@@ -511,8 +535,6 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  right: 15px;
-  bottom: 20px;
   cursor: pointer;
 }
 
@@ -522,14 +544,12 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 5px;
-    bottom: 5px;
   }
 }
 
 .burger-container .burger-menu .stick {
   width: 80px;
-  height: 8px;
+  height: 8.1px;
   border-radius: 5px;
   margin-bottom: 15px;
   background-color: #000;
@@ -537,7 +557,7 @@ a:hover {
 }
 
 .burger-container .burger-menu .stick:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 
 .burger-container .burger-menu .stick-1.open {
@@ -1024,15 +1044,6 @@ a:hover {
 }
 
 #despremine .despremine-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
   margin: 10px;
 }
 

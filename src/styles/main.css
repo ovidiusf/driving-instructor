@@ -1180,12 +1180,23 @@ a:hover {
   }
 }
 
-#cursuriauto .cursuriauto-title .spinning-wheel {
+#cursuriauto .cursuriauto-title #wheel {
   -webkit-animation: wheel 2s infinite linear;
           animation: wheel 2s infinite linear;
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  transform-box: fill-box;
+  transform-box: border-box;
+  fill: grey;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#cursuriauto .cursuriauto-title #wheel:hover {
+  fill: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: wheel 1s infinite linear;
+          animation: wheel 1s infinite linear;
 }
 
 @-webkit-keyframes wheel {

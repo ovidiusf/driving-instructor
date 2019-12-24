@@ -75,8 +75,8 @@ h1 {
   color: #2E1114;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }

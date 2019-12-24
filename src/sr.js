@@ -4,7 +4,7 @@ export default function () {
         distance: '30px',
         duration: 1000,
         desktop: true,
-        mobile: true
+        // mobile: true
     };
 
     /* Title Section (H3) */
@@ -33,14 +33,14 @@ export default function () {
     ScrollReveal().reveal('#galerie', {
         ...defaultProps,
         delay: 500,
-        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+        origin: 'bottom'
     });
 
     /* Testimoniale */
     ScrollReveal().reveal('#testimoniale', {
         ...defaultProps,
         delay: 500,
-        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+        origin: 'bottom'
     });
 
     /* Contact */

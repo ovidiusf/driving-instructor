@@ -7,13 +7,13 @@ Driving instructor webpage designed from scratch.
 
 * HTML
 * CSS
-* SaSS
+* SASS Pre-Processor
 * JavaScript
 
 ## Third Party Libraries Used
 
-* ScrollReveal
-* Animate
+* [ScrollReveal](https://scrollrevealjs.org/) 
+* [Animate](https://daneden.github.io/animate.css/)
 
 ## Figma Design
 

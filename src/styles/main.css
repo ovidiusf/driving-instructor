@@ -126,6 +126,13 @@ h3 {
   }
 }
 
+h3.h3-title {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
 h4 {
   text-align: left;
   font-size: 2.8rem;

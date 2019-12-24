@@ -38,6 +38,10 @@ h3 {
   @include respond(phone) {
     font-size: 30px;
   }
+  &.h3-title {
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+  }
 }
 
 h4 {

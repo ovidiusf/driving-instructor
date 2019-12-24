@@ -26,17 +26,17 @@ document.querySelector('#pulling-car').style.maxWidth = widthHero + "px";
 
 // sets the body to the dimension of the devices' inner width
 window.onload = function () {
-  $('body').css('width', 'headerWidth');
-  homeHeader.style.maxWidth = headerWidth;
+  $('body').css('width', 'document.documentElement.clientWidth');
+  homeHeader.style.maxWidth = headerWidthStart;
 };
 
 // changes the width if resized
 
 $(window).resize(function(){
-   if($(window).width()!=headerWidth){
+   if($(window).width()!=headerWidthStart){
       //execute code here.
-      headerWidth = $(window).width();
-      homeHeader.style.maxWidth = headerWidth;
+      headerWidthStart = $(window).width();
+      homeHeader.style.maxWidth = headerWidthStart;
    }
 })   
 

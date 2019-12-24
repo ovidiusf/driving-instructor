@@ -8,40 +8,45 @@ export default function () {
     };
 
     /* Title Section (H3) */
-    ScrollReveal().reveal('.h3-title', {
-        ...defaultProps,
-        delay: 1500,
-        distance: '0px',
-        origin: 'bottom'
-    });
+    // ScrollReveal().reveal('.h3-title', {
+    //     ...defaultProps,
+    //     delay: 1500,
+    //     distance: '0px',
+    //     origin: 'bottom'
+    // });
 
     /* Despre mine */
     ScrollReveal().reveal('#despremine', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 500,
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
     });
 
     /* Cursuri Auto */
     ScrollReveal().reveal('#cursuriauto', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 500,
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
     });
 
     /* Galerie */
     ScrollReveal().reveal('#galerie', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 500,
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
     });
 
     /* Testimoniale */
     ScrollReveal().reveal('#testimoniale', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 500,
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
     });
 
     /* Contact */
     ScrollReveal().reveal('#contact', {
         ...defaultProps,
         delay: 500,
-      });
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+    });
 }

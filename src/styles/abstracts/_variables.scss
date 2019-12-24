@@ -24,3 +24,23 @@ $paragraph-font-size: 2.3em;
 $default-font-family: "Franklin Gothic Book";
 
 $syncopate-font-family: 'Syncopate', sans-serif;
+
+// Animations
+
+@keyframes wheel {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes wheel-car {
+    from {
+      transform: rotateZ(360deg);
+    }
+    to {
+      transform: rotateZ(0deg);
+    }
+  }

@@ -18,35 +18,36 @@ export default function () {
     /* Despre mine */
     ScrollReveal().reveal('#despremine', {
         ...defaultProps,
-        delay: 500,
+        delay: 300,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
+
     });
 
     /* Cursuri Auto */
     ScrollReveal().reveal('#cursuriauto', {
         ...defaultProps,
-        delay: 500,
+        delay: 300,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
     });
 
     /* Galerie */
     ScrollReveal().reveal('#galerie', {
         ...defaultProps,
-        delay: 500,
+        delay: 300,
         origin: 'bottom'
     });
 
     /* Testimoniale */
     ScrollReveal().reveal('#testimoniale', {
         ...defaultProps,
-        delay: 500,
-        origin: 'bottom'
+        origin: 'bottom',
+        delay: 300
     });
 
     /* Contact */
     ScrollReveal().reveal('#contact', {
         ...defaultProps,
-        delay: 500,
+        delay: 300,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
     });
 }

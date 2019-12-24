@@ -19,6 +19,49 @@
 1em = 16px
 
 */
+@-webkit-keyframes wheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes wheel {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wheel-car {
+  from {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  to {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes wheel-car {
+  from {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  to {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -35,7 +78,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   html,
   body {
     zoom: 80%;
@@ -75,26 +118,26 @@ h1 {
   color: #2E1114;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   h1 {
     font-size: 70px;
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   h1 {
     font-size: 65px;
     margin-bottom: 10px;
   }
 }
 
-@media (max-width: 20em) {
+@media (max-width: 320px) {
   h1 {
     font-size: 65px;
   }
@@ -107,30 +150,23 @@ h2 {
   margin: 10px;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   h2 {
     font-size: 5.5rem;
   }
 }
 
 h3 {
-  text-align: right;
   font-size: 35px;
   font-weight: 400;
   margin-left: auto;
+  text-align: right;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   h3 {
     font-size: 30px;
   }
-}
-
-h3.h3-title {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
 
 h4 {
@@ -138,7 +174,7 @@ h4 {
   font-size: 2.8rem;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   h4 {
     font-size: 2.8rem;
   }
@@ -190,7 +226,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   .btn {
     padding: 1.1rem 1.1rem;
     font-size: 2.8rem;
@@ -258,7 +294,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #home-header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -282,7 +318,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #home-header .name-mobile {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -341,7 +377,7 @@ a:hover {
   justify-items: center;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #home-header #main-nav .menu-list {
     visibility: hidden;
     display: none;
@@ -390,13 +426,13 @@ a:hover {
   display: flex;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #home-header #main-nav .menu-list li {
     border-bottom: 2px solid #336F8D;
   }
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #home-header #main-nav .menu-list a {
     font-size: 30px;
     margin: 5px;
@@ -467,7 +503,7 @@ a:hover {
   display: flex;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   .home-icon {
     margin-left: 20px;
   }
@@ -484,7 +520,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   .home-icon #home-image {
     width: 60px;
     height: 58px;
@@ -508,7 +544,7 @@ a:hover {
   position: relative;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   .burger-container {
     height: 80px;
     width: 80px;
@@ -518,7 +554,7 @@ a:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   .burger-container {
     top: 15px;
     right: 20px;
@@ -545,7 +581,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   .burger-container .burger-menu {
     visibility: visible;
     display: -webkit-box;
@@ -901,19 +937,19 @@ a:hover {
   padding: 20px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #hero {
     left: 0vw;
   }
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #hero {
     margin-top: 350px;
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #hero {
     margin-top: 400px;
   }
@@ -921,6 +957,69 @@ a:hover {
 
 #hero .main-btn {
   margin-top: 20px;
+}
+
+#hero #pulling-car {
+  height: 80px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@media (max-width: 900px) {
+  #hero #pulling-car {
+    overflow: hidden;
+    height: 100px;
+  }
+}
+
+#hero #pulling-car #speed-car-container {
+  margin-right: 40px;
+}
+
+#hero #pulling-car #speed-car-container.animate {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: translate(-1300px);
+          transform: translate(-1300px);
+}
+
+#hero #pulling-car #speed-car-container.hidden {
+  height: 50px;
+  visibility: hidden;
+}
+
+@media (max-width: 900px) {
+  #hero #pulling-car #speed-car-container.hidden {
+    height: 100px;
+  }
+}
+
+#hero #pulling-car #left-wheel,
+#hero #pulling-car #right-wheel {
+  -webkit-animation: wheel-car 1s infinite linear;
+          animation: wheel-car 1s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
 }
 
 #despremine {
@@ -953,13 +1052,13 @@ a:hover {
   padding: 20px 100px 0px 60px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #despremine {
     left: 0vw;
   }
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #despremine {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
     background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(101, 157, 189, 0.6);
@@ -974,13 +1073,13 @@ a:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #despremine {
     margin-top: 800px;
   }
 }
 
-@media (max-width: 20em) {
+@media (max-width: 320px) {
   #despremine {
     height: 800px;
   }
@@ -999,7 +1098,7 @@ a:hover {
           flex-direction: row;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #despremine .despremine-main-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1044,7 +1143,7 @@ a:hover {
   text-align: justify;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #despremine .despremine-content {
     margin: 0px;
   }
@@ -1089,13 +1188,13 @@ a:hover {
   padding: 20px 60px 0px 60px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #cursuriauto {
     left: 0vw;
   }
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #cursuriauto {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 110, 140, 0.7)), color-stop(83.33%, rgba(255, 255, 255, 0))), rgba(101, 157, 189, 0.6);
     background: linear-gradient(180deg, rgba(50, 110, 140, 0.7) 0%, rgba(255, 255, 255, 0) 83.33%), rgba(101, 157, 189, 0.6);
@@ -1131,7 +1230,7 @@ a:hover {
           flex-direction: row;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #cursuriauto .cursuriauto-btn-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1147,19 +1246,19 @@ a:hover {
   margin: 20px;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #cursuriauto .cursuriauto-btn {
     margin: 10px;
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #cursuriauto .cursuriauto-btn {
     margin: 8px;
   }
 }
 
-@media (max-width: 20em) {
+@media (max-width: 320px) {
   #cursuriauto .cursuriauto-btn {
     margin: 8px;
   }
@@ -1178,7 +1277,7 @@ a:hover {
           align-items: center;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #cursuriauto .cursuriauto-title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1204,28 +1303,6 @@ a:hover {
   transition: all 0.7s ease;
   -webkit-animation: wheel 1s infinite linear;
           animation: wheel 1s infinite linear;
-}
-
-@-webkit-keyframes wheel {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes wheel {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 #main-section {
@@ -1316,7 +1393,7 @@ a:hover {
   padding: 20px 20px 20px 20px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #galerie {
     left: 0vw;
   }
@@ -1404,7 +1481,7 @@ a:hover {
   padding: 60px 60px 60px 60px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #testimoniale {
     left: 0vw;
   }
@@ -1432,7 +1509,7 @@ a:hover {
   margin-bottom: 50px;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #testimoniale .testimonial-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1469,7 +1546,7 @@ a:hover {
   width: 75px;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #testimoniale .testimonial-container .testimonial-content .quotation-container .quotation-marks,
   #testimoniale .testimonial-container .testimonial-content .quotation-container .quotation-marks-end,
   #testimoniale .testimonial-container .testimonial-content .quotation-container-end .quotation-marks,
@@ -1499,7 +1576,7 @@ a:hover {
   margin-top: -10px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #testimoniale .testimonial-container .testimonial-content .quotation-container-end {
     margin-right: 50px;
   }
@@ -1521,7 +1598,7 @@ a:hover {
   width: 300px;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #testimoniale .testimonial-container .img-container-testimonial .testimonial-img {
     height: auto;
     max-width: 275px;
@@ -1558,7 +1635,7 @@ a:hover {
   font-size: 16px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #contact {
     left: 0vw;
   }
@@ -1597,7 +1674,7 @@ a:hover {
           align-items: center;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #contact .contact-facebook-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1620,7 +1697,7 @@ a:hover {
   margin-right: 10px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #contact .contact-facebook-container .contact-facebook-icon {
     margin-right: 0px;
     margin-bottom: 10px;
@@ -1639,7 +1716,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img {
     height: 75px;
     width: 75px;
@@ -1653,7 +1730,7 @@ a:hover {
   transition: all 0.5s ease;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img:hover {
     height: 100px;
     width: 100px;
@@ -1674,7 +1751,7 @@ a:hover {
   border-radius: 200px;
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #contact .contact-facebook-container .fb-page {
     display: none;
     visibility: hidden;
@@ -1694,7 +1771,7 @@ a:hover {
           justify-content: center;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 1200px) {
   #contact .contact-email-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1717,7 +1794,7 @@ a:hover {
   margin-right: 10px;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 1200px) {
   #contact .contact-email-container .contact-email-icon {
     margin-right: 0px;
     margin-bottom: 10px;
@@ -1759,7 +1836,7 @@ a:hover {
           flex-direction: row;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 1200px) {
   #contact .contact-email-container .email-text {
     margin-bottom: 10px;
   }
@@ -1770,19 +1847,19 @@ a:hover {
   font-size: 2.6rem;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 1200px) {
   #contact .contact-email-container .email-text h4 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   #contact .contact-email-container .email-text h4 {
     font-size: 1.6rem;
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   #contact .contact-email-container .email-text h4 {
     font-size: 1.5rem;
   }
@@ -1813,7 +1890,7 @@ footer .footer-container p {
   font-family: "Franklin Gothic Book";
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   footer .footer-container p {
     font-size: 18px;
   }

@@ -3,12 +3,17 @@ Driving instructor webpage designed from scratch.
 
 ## WIP
 
-## Technologies used
+## Technologies Used
 
 * HTML
 * CSS
 * SaSS
 * JavaScript
+
+## Third Party Libraries Used
+
+* ScrollReveal
+* Animate
 
 ## Figma Design
 
@@ -29,11 +34,11 @@ Driving instructor webpage designed from scratch.
 * h1 title animation with animate.css
 * return home/up button below contact and above footer
 * favicon
+* nice wheel rotating effect in driving lessons (svg implementation)
+* scroll reveal effect with JS
 
 ## Planned features
 
-* nice wheel rotating effect in driving lessons (svg implementation)
-* scroll reveal effect with JS
-* contact section icon animations
+* other special animations for some sections
 * real information
 

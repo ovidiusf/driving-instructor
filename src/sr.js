@@ -4,7 +4,7 @@ export default function () {
         distance: '30px',
         duration: 1000,
         desktop: true,
-        // mobile: true
+        mobile: false
     };
 
     /* Title Section (H3) */

@@ -12,20 +12,32 @@ let prevScrollpos = window.pageYOffset;
 const windowCurrentWidth = 900;
 // const headerHeight = "-8rem";
 const headerHeight = - homeHeader.offsetHeight + "px";
+const headerWidthStart = document.documentElement.clientWidth + "px";
+
+let headerWidth = $(window).width();
 const returnToTopButton = document.querySelector('#return-to-top');
 const allAnchors = document.querySelectorAll('a[href^="#"]');
 const mainSection = document.querySelector('#main-section');
 const nameMobile = document.querySelector('.name-mobile');
 const speedCarContainer = document.querySelector('#speed-car-container');
 let widthHero = document.querySelector('#hero').offsetWidth;
-document.querySelector('#pulling-car').style.maxWidth = widthHero +"px";
-console.log(widthHero);
-
+document.querySelector('#pulling-car').style.maxWidth = widthHero + "px";
 
 // sets the body to the dimension of the devices' inner width
 window.onload = function () {
-  $('body').css('width', 'window.innerWidth');
+  $('body').css('width', 'document.documentElement.clientWidth');
+  homeHeader.style.maxWidth = headerWidthStart;
 };
+
+// changes the width if resized
+
+$(window).resize(function(){
+   if($(window).width()!=headerWidth){
+      //execute code here.
+      headerWidth = $(window).width();
+      homeHeader.style.maxWidth = headerWidth;
+   }
+})   
 
 // changes behaviour of the navigation bar when mobile
 burgerMenuToggle.addEventListener('click', function () {
@@ -168,7 +180,7 @@ const animateAndHideCar = () => {
   setTimeout(function () {
     speedCarContainer.classList.toggle('animate');
   }, 2300);
-  
+
   setTimeout(function () {
     speedCarContainer.classList.toggle('hidden');
   }, 5000);

@@ -1,4 +1,4 @@
-// import * as Variables from "./variables.js";
+import initSr from './sr.js';
 
 // Defining variables
 const menuList = document.querySelector('#menu-list');
@@ -166,3 +166,6 @@ jumpToSection();
 //       $(".menu-list").addClass("closed");
 //     }
 //   });
+
+// Scroll Reveal
+initSr();

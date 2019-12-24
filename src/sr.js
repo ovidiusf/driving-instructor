@@ -7,41 +7,41 @@ export default function () {
         mobile: true
     };
 
-    /* Title Section (H3) */
-    ScrollReveal().reveal('.h3-title', {
-        ...defaultProps,
-        delay: 1500,
-        distance: '0px',
-        origin: 'bottom'
-    });
+    /* Title Section */
+    // ScrollReveal().reveal('#pulling-car', {
+    //     ...defaultProps,
+    //     // delay: 1500,
+    //     distance: '0px',
+    //     origin: 'bottom'
+    // });
 
     /* Despre mine */
     ScrollReveal().reveal('#despremine', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 300,
     });
 
     /* Cursuri Auto */
     ScrollReveal().reveal('#cursuriauto', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 300,
     });
 
     /* Galerie */
     ScrollReveal().reveal('#galerie', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 300,
     });
 
     /* Testimoniale */
     ScrollReveal().reveal('#testimoniale', {
-      ...defaultProps,
-      delay: 500,
+        ...defaultProps,
+        delay: 300,
     });
 
     /* Contact */
     ScrollReveal().reveal('#contact', {
         ...defaultProps,
-        delay: 500,
-      });
+        delay: 300,
+    });
 }

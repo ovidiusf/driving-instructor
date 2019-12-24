@@ -16,6 +16,7 @@ const returnToTopButton = document.querySelector('#return-to-top');
 const allAnchors = document.querySelectorAll('a[href^="#"]');
 const mainSection = document.querySelector('#main-section');
 const nameMobile = document.querySelector('.name-mobile');
+const speedCarContainer = document.querySelector('#speed-car-container');
 
 
 // sets the body to the dimension of the devices' inner width
@@ -111,16 +112,6 @@ returnToTopButton.addEventListener('click', function () {
   $('body,html').animate({
     scrollTop: 0
   }, 500);
-
-  // setTimeout(function () {
-  //   window.scrollTo(
-  //     {
-  //       top: 0,
-  //       left: 0,
-  //       behavior: 'smooth'
-  //     }
-  //   ), 1000
-  // });
 });
 
 
@@ -147,6 +138,7 @@ const jumpToSection = function () {
   });
 }
 
+
 jumpToSection();
 
 
@@ -167,5 +159,21 @@ jumpToSection();
 //     }
 //   });
 
+// Car Animation
+
+const animateAndHideCar = () => {
+  setTimeout(function () {
+    speedCarContainer.classList.toggle('animate');
+  }, 2300);
+  
+  setTimeout(function () {
+    speedCarContainer.classList.toggle('hidden');
+  }, 5000);
+};
+
 // Scroll Reveal
 initSr();
+
+
+// Start Car Animation
+animateAndHideCar();

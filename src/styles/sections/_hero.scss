@@ -2,18 +2,85 @@
 #hero {
   @include layout;
   @include background-desktop;
-
   min-height: 456px;
   margin-top: 250px;
   padding: 20px;
-  @include respond(tab-port){
+  @include respond(tab-port) {
     margin-top: 350px;
   }
-  @include respond(phone){
+  @include respond(phone) {
     margin-top: 400px;
   }
-
   .main-btn {
     margin-top: 20px;
+  }
+
+  #pulling-car {
+    height: 50px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: flex-end;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    text-align: right;
+    @include respond(tab-port) {
+      height: 100px;
+    }
+    #speed-car-container {
+      &.animate {
+        transition: all 2s ease-in-out;
+        transform: translate(-1300px);
+      }
+      &.hidden {
+        height: 50px;
+        display: none;
+        visibility: hidden;
+        @include respond(tab-port) {
+          height: 100px;
+        }
+      }
+    }
+    #left-wheel,
+    #right-wheel {
+      animation: wheel-car 1s infinite linear;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+  }
+}
+
+.fadeInRight {
+  transition: fadeInRight linear;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  @include respond(tab-port) {
+    animation: fadeInRight-mobile linear;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight-mobile {
+  from {
+    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

@@ -26,7 +26,7 @@ document.querySelector('#pulling-car').style.maxWidth = widthHero + "px";
 // sets the body to the dimension of the devices' inner width
 window.onload = function () {
   $('body').css('width', 'document.documentElement.clientWidth');
-  homeHeader.style.maxWidth = headerWidthStart;
+  homeHeader.style.maxWidth = headerWidth;
 };
 
 // changes the width if resized

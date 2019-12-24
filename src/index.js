@@ -14,6 +14,8 @@ const windowCurrentWidth = 900;
 const headerHeight = - homeHeader.offsetHeight + "px";
 const headerWidthStart = document.documentElement.clientWidth + "px";
 
+const body = document.querySelector('body');
+
 let headerWidth = $(window).width();
 
 const returnToTopButton = document.querySelector('#return-to-top');
@@ -26,17 +28,18 @@ document.querySelector('#pulling-car').style.maxWidth = widthHero + "px";
 
 // sets the body to the dimension of the devices' inner width
 window.onload = function () {
-  $('body').css('width', 'document.documentElement.clientWidth');
-  homeHeader.style.maxWidth = headerWidthStart;
+  // $('body').css('width', 'headerWidthStart');
+  body.style.maxWidth = headerWidthStart;
+  homeHeader.style.maxWidth = headerWidth;
 };
 
 // changes the width if resized
 
 $(window).resize(function(){
-   if($(window).width()!=headerWidthStart){
+   if($(window).width()!=headerWidth){
       //execute code here.
-      headerWidthStart = $(window).width();
-      homeHeader.style.maxWidth = headerWidthStart;
+      headerWidth = $(window).width();
+      homeHeader.style.maxWidth = headerWidth;
    }
 })   
 

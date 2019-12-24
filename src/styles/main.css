@@ -160,6 +160,7 @@ h3 {
   font-size: 35px;
   font-weight: 400;
   margin-left: auto;
+  text-align: right;
 }
 
 @media (max-width: 600px) {
@@ -959,7 +960,7 @@ a:hover {
 }
 
 #hero #pulling-car {
-  height: 50px;
+  height: 80px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -972,22 +973,26 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  text-align: right;
 }
 
 @media (max-width: 900px) {
   #hero #pulling-car {
+    overflow: hidden;
     height: 100px;
   }
+}
+
+#hero #pulling-car #speed-car-container {
+  margin-right: 40px;
 }
 
 #hero #pulling-car #speed-car-container.animate {
@@ -999,7 +1004,6 @@ a:hover {
 
 #hero #pulling-car #speed-car-container.hidden {
   height: 50px;
-  display: none;
   visibility: hidden;
 }
 
@@ -1016,78 +1020,6 @@ a:hover {
   -webkit-transform-origin: center;
           transform-origin: center;
   transform-box: fill-box;
-}
-
-.fadeInRight {
-  -webkit-transition: fadeInRight linear;
-  transition: fadeInRight linear;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@media (max-width: 900px) {
-  .fadeInRight {
-    -webkit-animation: fadeInRight-mobile linear;
-            animation: fadeInRight-mobile linear;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes fadeInRight-mobile {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(5%, 0, 0);
-            transform: translate3d(5%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInRight-mobile {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(5%, 0, 0);
-            transform: translate3d(5%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
 }
 
 #despremine {

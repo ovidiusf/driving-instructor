@@ -17,6 +17,9 @@ const allAnchors = document.querySelectorAll('a[href^="#"]');
 const mainSection = document.querySelector('#main-section');
 const nameMobile = document.querySelector('.name-mobile');
 const speedCarContainer = document.querySelector('#speed-car-container');
+let widthHero = document.querySelector('#hero').offsetWidth;
+document.querySelector('#pulling-car').style.maxWidth = widthHero +"px";
+console.log(widthHero);
 
 
 // sets the body to the dimension of the devices' inner width

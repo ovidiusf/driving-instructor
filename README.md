@@ -14,6 +14,8 @@ Driving instructor webpage designed from scratch.
 
 * [ScrollReveal](https://scrollrevealjs.org/) 
 * [Animate](https://daneden.github.io/animate.css/)
+* JQUERY
+* [Tilt.js](https://gijsroge.github.io/tilt.js/)
 
 ## Figma Design
 

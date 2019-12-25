@@ -31,9 +31,10 @@
     }
     #speed-car-container {
       margin-right: 40px;
-      @include respond(tab-port){
-        z-index: 1;
-        margin-right: -100px;
+      @include respond(tab-port) {
+        // // z-index: 1;
+        // margin-right: -150px;
+      }
       &.animate {
         transition: all 2s ease-in-out;
         transform: translate(-1300px);
@@ -45,8 +46,6 @@
         @include respond(tab-port) {
           height: 100px;
         }
-      }
-
       }
     }
     #left-wheel,

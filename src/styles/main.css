@@ -995,24 +995,19 @@ a:hover {
   margin-right: 40px;
 }
 
-@media (max-width: 900px) {
-  #hero #pulling-car #speed-car-container {
-    z-index: 1;
-    margin-right: -100px;
-  }
-  #hero #pulling-car #speed-car-container.animate {
-    -webkit-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out;
-    -webkit-transform: translate(-1300px);
-            transform: translate(-1300px);
-  }
-  #hero #pulling-car #speed-car-container.hidden {
-    height: 50px;
-    visibility: hidden;
-  }
+#hero #pulling-car #speed-car-container.animate {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: translate(-1300px);
+          transform: translate(-1300px);
 }
 
-@media (max-width: 900px) and (max-width: 900px) {
+#hero #pulling-car #speed-car-container.hidden {
+  height: 50px;
+  visibility: hidden;
+}
+
+@media (max-width: 900px) {
   #hero #pulling-car #speed-car-container.hidden {
     height: 100px;
   }

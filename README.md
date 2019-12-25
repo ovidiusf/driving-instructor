@@ -42,3 +42,7 @@ Driving instructor webpage designed from scratch.
 * other special animations for some sections
 * real information
 
+## Netlify
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1d89454c-bf91-4bb6-bbfa-fdfe6108bcc4/deploy-status)](https://app.netlify.com/sites/kind-euclid-6eecab/deploys)
+

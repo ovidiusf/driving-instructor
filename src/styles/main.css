@@ -71,6 +71,10 @@ html {
   min-width: 100vw;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
   font-family: "Syncopate", sans-serif;
   display: block;

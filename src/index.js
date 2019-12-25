@@ -1,4 +1,5 @@
 import initSr from './sr.js';
+import initTilt from './tilt.js';
 
 // Defining variables
 const menuList = document.querySelector('#menu-list');
@@ -197,6 +198,8 @@ const animateAndHideCar = () => {
 // Scroll Reveal
 initSr();
 
-
 // Start Car Animation
 animateAndHideCar();
+
+// Tilt Gallery Images
+initTilt();

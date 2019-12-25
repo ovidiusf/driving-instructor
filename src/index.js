@@ -13,9 +13,6 @@ const windowCurrentWidth = 900;
 // const headerHeight = "-8rem";
 const headerHeight = - homeHeader.offsetHeight + "px";
 const headerWidthStart = document.documentElement.clientWidth + "px";
-
-const body = document.querySelector('body');
-
 let headerWidth = $(window).width();
 
 const returnToTopButton = document.querySelector('#return-to-top');
@@ -24,13 +21,15 @@ const mainSection = document.querySelector('#main-section');
 const nameMobile = document.querySelector('.name-mobile');
 const speedCarContainer = document.querySelector('#speed-car-container');
 let widthHero = document.querySelector('#hero').offsetWidth;
-document.querySelector('#pulling-car').style.maxWidth = widthHero + "px";
+const pullingCarContainer = document.querySelector('#pulling-car');
+
+
+// Setting the container maxWidth to the heros width
+pullingCarContainer.style.maxWidth = widthHero + "px";
 
 // sets the body to the dimension of the devices' inner width
 window.onload = function () {
-  $('body').css('width', 'headerWidthStart');
-  // body.style.width = headerWidthStart;
-  homeHeader.style.width = headerWidth;
+  $('body').css('width', 'document.documentElement.clientWidth');
 };
 
 // changes the width if resized
@@ -181,6 +180,10 @@ jumpToSection();
 // Car Animation
 
 const animateAndHideCar = () => {
+  if(document.documentElement.clientWidth < 768){
+    pullingCarContainer.classList.toggle('fadeInLeft');
+    pullingCarContainer.classList.toggle('fadeInRight');
+  }
   setTimeout(function () {
     speedCarContainer.classList.toggle('animate');
   }, 2300);
@@ -189,6 +192,7 @@ const animateAndHideCar = () => {
     speedCarContainer.classList.toggle('hidden');
   }, 5000);
 };
+
 
 // Scroll Reveal
 initSr();

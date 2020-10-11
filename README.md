@@ -1,8 +1,6 @@
-# driving-instructor
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1d89454c-bf91-4bb6-bbfa-fdfe6108bcc4/deploy-status)](https://app.netlify.com/sites/kind-euclid-6eecab/deploys)
-Driving instructor webpage designed from scratch.
+# driving-instructor [![Netlify Status](https://api.netlify.com/api/v1/badges/1d89454c-bf91-4bb6-bbfa-fdfe6108bcc4/deploy-status)](https://app.netlify.com/sites/kind-euclid-6eecab/deploys)
 
-## WIP
+Driving instructor webpage designed from scratch.
 
 ## Technologies Used
 
@@ -44,5 +42,4 @@ Driving instructor webpage designed from scratch.
 
 - other special animations for some sections
 - real information
-
-## Netlify
+- Migration to the Vue framework

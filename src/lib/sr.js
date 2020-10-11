@@ -1,12 +1,12 @@
-import { scrollRevealProps } from './constants.js';
+import { SCROLL_REVEAL_PROPS } from './constants.js';
 
 export default function () {
   const defaultProps = {
-    easing: scrollRevealProps.cubicBezier,
-    distance: scrollRevealProps.distance,
+    easing: SCROLL_REVEAL_PROPS.cubicBezier,
+    distance: SCROLL_REVEAL_PROPS.distance,
     duration: 1000,
     desktop: true,
-    mobile: false
+    mobile: true
   };
 
   /* Despre mine */

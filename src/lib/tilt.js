@@ -1,6 +1,4 @@
 
-const tilt = $('.js-tilt').tilt();
-
 const initTilt = () => {
   $('.galerie-img').tilt({
     maxTilt: 3,

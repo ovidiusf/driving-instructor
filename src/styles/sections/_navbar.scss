@@ -146,9 +146,9 @@
 
   #home-image {
     transition: all 0.5s ease;
+    opacity: 1;
     &:hover {
-      margin-right: 5px;
-      transition: all 0.5s ease;
+      opacity: 0.5;
     }
     @include respond(tab-port) {
       width: 60px;
@@ -174,7 +174,7 @@
     top: 5px;
     bottom: 10px;
   }
-  @include respond(phone){
+  @include respond(phone) {
     top: 15px;
     right: 20px;
     bottom: 2px;

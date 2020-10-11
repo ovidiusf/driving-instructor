@@ -516,12 +516,11 @@ a:hover {
 .home-icon #home-image {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  opacity: 1;
 }
 
 .home-icon #home-image:hover {
-  margin-right: 5px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  opacity: 0.5;
 }
 
 @media (max-width: 900px) {
@@ -1693,7 +1692,7 @@ a:hover {
 }
 
 #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img:hover {
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 #contact .contact-facebook-container .fb-page {
@@ -1773,7 +1772,7 @@ a:hover {
 }
 
 #contact .contact-email-container .contact-email-icon .contact-email-icon-img:hover {
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 #contact .contact-email-container .email-text {

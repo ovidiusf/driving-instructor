@@ -941,12 +941,6 @@ a:hover {
   padding: 20px;
 }
 
-@media (max-width: 600px) {
-  #hero {
-    left: 0vw;
-  }
-}
-
 @media (max-width: 900px) {
   #hero {
     margin-top: 350px;
@@ -1054,12 +1048,6 @@ a:hover {
   border-radius: 50px 800px 800px 50px;
   margin-top: 600px;
   padding: 20px 100px 0px 60px;
-}
-
-@media (max-width: 600px) {
-  #despremine {
-    left: 0vw;
-  }
 }
 
 @media (max-width: 900px) {
@@ -1190,12 +1178,6 @@ a:hover {
   border-radius: 800px 50px 50px 800px;
   margin-top: 500px;
   padding: 20px 60px 0px 60px;
-}
-
-@media (max-width: 600px) {
-  #cursuriauto {
-    left: 0vw;
-  }
 }
 
 @media (max-width: 900px) {
@@ -1397,12 +1379,6 @@ a:hover {
   padding: 20px 20px 20px 20px;
 }
 
-@media (max-width: 600px) {
-  #galerie {
-    left: 0vw;
-  }
-}
-
 #galerie .galerie-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1483,12 +1459,6 @@ a:hover {
   border-radius: 50px;
   margin-top: 400px;
   padding: 60px 60px 60px 60px;
-}
-
-@media (max-width: 600px) {
-  #testimoniale {
-    left: 0vw;
-  }
 }
 
 #testimoniale p {
@@ -1639,12 +1609,6 @@ a:hover {
   font-size: 16px;
 }
 
-@media (max-width: 600px) {
-  #contact {
-    left: 0vw;
-  }
-}
-
 #contact .form-email-container .form-email {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1716,6 +1680,7 @@ a:hover {
   height: 125px;
   width: 125px;
   cursor: pointer;
+  opacity: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -1728,17 +1693,7 @@ a:hover {
 }
 
 #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img:hover {
-  width: 150px;
-  height: 150px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-@media (max-width: 600px) {
-  #contact .contact-facebook-container .contact-facebook-icon .contact-facebook-icon-img:hover {
-    height: 100px;
-    width: 100px;
-  }
+  opacity: 0.75;
 }
 
 #contact .contact-facebook-container .fb-page {
@@ -1757,7 +1712,6 @@ a:hover {
 
 @media (max-width: 900px) {
   #contact .contact-facebook-container .fb-page {
-    display: none;
     visibility: hidden;
   }
 }
@@ -1813,15 +1767,13 @@ a:hover {
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  opacity: 1;
   width: 75px;
   height: 75px;
 }
 
 #contact .contact-email-container .contact-email-icon .contact-email-icon-img:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  height: 85px;
-  width: 85px;
+  opacity: 0.75;
 }
 
 #contact .contact-email-container .email-text {

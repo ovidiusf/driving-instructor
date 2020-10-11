@@ -1,10 +1,10 @@
 {
   "name": "driving-instructor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "driving instructor webpage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   "dependencies": {
     "scrollreveal": "^4.0.5",
     "tilt.js": "^1.2.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
   }
 }

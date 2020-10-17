@@ -1,6 +1,5 @@
 import { DOM_ELEMENTS } from './constants.js';
 
-
 const { homeHeader } = DOM_ELEMENTS;
 let headerWidth = $(window).width();
 

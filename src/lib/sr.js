@@ -1,46 +1,29 @@
 import { SCROLL_REVEAL_PROPS } from './constants.js';
 
-export default function () {
-  const defaultProps = {
-    easing: SCROLL_REVEAL_PROPS.cubicBezier,
-    distance: SCROLL_REVEAL_PROPS.distance,
-    duration: 1000,
-    desktop: true,
-    mobile: true
-  };
+const arrayToReveal = [
+  '#despremine',
+  '#cursuriauto',
+  '#galerie',
+  '#testimoniale',
+  '#contact'
+];
 
-  /* Despre mine */
-  ScrollReveal().reveal('#despremine', {
-    ...defaultProps,
-    delay: 100,
-    origin: window.innerWidth > 768 ? 'left' : 'left'
-  });
+const defaultProps = {
+  easing: SCROLL_REVEAL_PROPS.cubicBezier,
+  distance: SCROLL_REVEAL_PROPS.distance,
+  duration: 1000,
+  delay: 300,
+  origin: window.innerWidth > 768 ? 'left' : 'bottom',
+  desktop: true,
+  mobile: false
+};
 
-  /* Cursuri Auto */
-  ScrollReveal().reveal('#cursuriauto', {
-    ...defaultProps,
-    delay: 300,
-    origin: window.innerWidth > 768 ? 'left' : 'left'
-  });
-
-  /* Galerie */
-  ScrollReveal().reveal('#galerie', {
-    ...defaultProps,
-    delay: 300,
-    origin: window.innerWidth > 768 ? 'left' : 'left'
-  });
-
-  /* Testimoniale */
-  ScrollReveal().reveal('#testimoniale', {
-    ...defaultProps,
-    delay: 300,
-    origin: window.innerWidth > 768 ? 'left' : 'left'
-  });
-
-  /* Contact */
-  ScrollReveal().reveal('#contact', {
-    ...defaultProps,
-    delay: 300,
-    origin: window.innerWidth > 768 ? 'left' : 'left'
+function revealScroll(id) {
+  ScrollReveal().reveal(id, {
+    ...defaultProps
   });
 }
+
+export default () => {
+  arrayToReveal.forEach((element) => revealScroll(element));
+};

@@ -1,14 +1,13 @@
-
 const initTilt = () => {
-  $('.galerie-img').tilt({
-    maxTilt: 3,
-  });
-  $('.despremine-img').tilt({
-    maxTilt: 2,
-  });
-  $('.testimonial-img').tilt({
-    maxTilt: 3,
-  });
+  tiltImage('.galerie-img');
+  tiltImage('.despremine-img');
+  tiltImage('.testimonial-img');
 };
+
+function tiltImage(id, maxTilt = 3) {
+  $(id).tilt({
+    maxTilt: maxTilt
+  });
+}
 
 export default initTilt;
